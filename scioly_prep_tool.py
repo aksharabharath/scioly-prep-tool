@@ -60,13 +60,15 @@ questions = {
 # ------------------------------
 st.title("Science Olympiad Prep Tool")
 
+# Initialize session state for selected questions
+if 'selected_questions' not in st.session_state:
+    st.session_state.selected_questions = []
+
 # Event Selection
 event = st.selectbox("Select Event:", list(questions.keys()))
-
 st.write(f"### {event} Drill")
 
 # Question Loop
-selected_questions = []  # For cheat sheet
 for i, q in enumerate(questions[event], 1):
     st.write(f"**Q{i}: {q['question']}**")
     choice = st.radio("Select answer:", q["options"], key=f"{event}_{i}")
@@ -76,12 +78,15 @@ for i, q in enumerate(questions[event], 1):
             st.success("Correct!")
         else:
             st.error(f"Incorrect! Correct answer: {q['answer']}")
-        selected_questions.append(f"Q{i}: {q['question']} - Answer: {q['answer']}")
+        # Save answered question to session state
+        question_entry = f"Q{i}: {q['question']} - Answer: {q['answer']}"
+        if question_entry not in st.session_state.selected_questions:
+            st.session_state.selected_questions.append(question_entry)
 
 # Cheat Sheet Generator
 if st.button("Generate Cheat Sheet"):
-    if selected_questions:
-        cheat_text = "\n".join(selected_questions)
+    if st.session_state.selected_questions:
+        cheat_text = "\n".join(st.session_state.selected_questions)
         st.write("### Cheat Sheet")
         st.text(cheat_text)
         st.download_button("Download Cheat Sheet", cheat_text, file_name=f"{event}_cheatsheet.txt")
