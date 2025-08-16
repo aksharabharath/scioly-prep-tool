@@ -1,149 +1,141 @@
-# scioly_prep_tool.py
-import streamlit as st
-import random
-import time
 import json
+import random
+import os
+import time
 
-# ------------------------------
-# Load questions from JSON file
-# ------------------------------
-with open("questions.json", "r", encoding="utf-8") as f:
-    all_questions = json.load(f)
+DATA_FILE = "questions.json"
 
-# Organize questions by event
-questions_by_event = {}
-for q in all_questions:
-    event = q.get("event", "Unknown")
-    questions_by_event.setdefault(event, []).append(q)
+def load_data():
+    if os.path.exists(DATA_FILE):
+        with open(DATA_FILE, "r") as f:
+            return json.load(f)
+    return []
 
-# ------------------------------
-# Streamlit App
-# ------------------------------
-st.title("Science Olympiad Prep Tool")
+def save_data(data):
+    with open(DATA_FILE, "w") as f:
+        json.dump(data, f, indent=4)
 
-# Initialize session state
-if 'selected_questions' not in st.session_state:
-    st.session_state.selected_questions = []
-if 'scores' not in st.session_state:
-    st.session_state.scores = {}
+def add_question(data):
+    question = input("Enter question: ")
+    answer = input("Enter answer: ")
+    topic = input("Enter topic (e.g., Astronomy, Forensics): ")
+    difficulty = input("Enter difficulty (Easy, Medium, Hard): ")
 
-# ------------------------------
-# Sidebar: Event & Mode
-# ------------------------------
-event = st.selectbox("Select Event:", list(questions_by_event.keys()))
-mode = st.radio("Select Mode:", ["Study Mode", "Timed Drill"])
+    data.append({
+        "question": question,
+        "answer": answer,
+        "topic": topic,
+        "difficulty": difficulty
+    })
+    save_data(data)
+    print("✅ Question added successfully!\n")
 
-# ------------------------------
-# Sidebar: Topic & Difficulty Filtering
-# ------------------------------
-topics = list(set(q.get('topic', 'Unknown') for q in questions_by_event[event]))
-selected_topics = st.multiselect("Filter by Topic:", topics, default=topics)
+def view_questions(data):
+    if not data:
+        print("⚠️ No questions available.\n")
+        return
+    for i, q in enumerate(data, 1):
+        print(f"{i}. {q['question']} (Topic: {q['topic']}, Difficulty: {q['difficulty']})")
+    print()
 
-difficulties = list(set(q.get('difficulty', 'Unknown') for q in questions_by_event[event]))
-selected_difficulty = st.multiselect("Select Difficulty:", difficulties, default=difficulties)
+def study_mode(data):
+    if not data:
+        print("⚠️ No questions available.\n")
+        return
 
-# ------------------------------
-# Filter questions based on selection
-# ------------------------------
-filtered_questions = [
-    q for q in questions_by_event[event]
-    if q.get('topic', 'Unknown') in selected_topics and q.get('difficulty', 'Unknown') in selected_difficulty
-]
-random.shuffle(filtered_questions)
+    print("🎯 Study Mode - Practice Freely")
+    questions = data[:]
+    random.shuffle(questions)
 
-# Display number of questions and recommended time
-num_questions = len(filtered_questions)
-recommended_time = num_questions  # 1 minute per question
-st.markdown(f"**Number of questions selected:** {num_questions}")
-st.markdown(f"**Recommended time:** {recommended_time} minutes (1 min per question)")
+    for q in questions:
+        print(f"\nQuestion: {q['question']}")
+        input("Press Enter to see the answer...")
+        print(f"Answer: {q['answer']}")
+        input("Press Enter to continue...")
 
-# ------------------------------
-# Timed Drill Setup
-# ------------------------------
-if mode == "Timed Drill":
-    time_limit = st.number_input(
-        "Enter time limit (minutes):",
-        min_value=1,
-        value=recommended_time,
-        help="Adjust time to challenge yourself or accept the recommended time."
-    )
+def timed_drill(data):
+    if not data:
+        print("⚠️ No questions available.\n")
+        return
 
-    start_drill = st.button("Start Timed Drill")
-    
-    if start_drill:
-        start_time = time.time()
-        total_seconds = time_limit * 60  # convert minutes to seconds
-        
-        for i, q in enumerate(filtered_questions, 1):
-            elapsed = time.time() - start_time
-            if elapsed > total_seconds:
-                st.warning("Time's up!")
-                break
-            
-            st.write(f"**Q{i}: {q['question']}**")
-            choice = st.radio("Select answer:", q["options"], key=f"{event}_{i}")
-            
-            show_hint = st.checkbox("Show Hint", key=f"hint_{i}")
-            if show_hint:
-                st.info(q["hint"])
-            
-            if st.button(f"Submit Q{i}", key=f"submit_{event}_{i}"):
-                if choice == q["answer"]:
-                    st.success("Correct!")
-                    st.session_state.scores[event] = st.session_state.scores.get(event, 0) + 1
-                else:
-                    st.error(f"Incorrect! Correct answer: {q['answer']}")
-                
-                entry = f"Q{i}: {q['question']} - Answer: {q['answer']}"
-                if entry not in st.session_state.selected_questions:
-                    st.session_state.selected_questions.append(entry)
+    topic_filter = input("Filter by topic (or press Enter for all): ")
+    difficulty_filter = input("Filter by difficulty (Easy, Medium, Hard, or press Enter for all): ")
 
-# ------------------------------
-# Study Mode
-# ------------------------------
-else:
-    for i, q in enumerate(filtered_questions, 1):
-        st.write(f"**Q{i}: {q['question']}**")
-        choice = st.radio("Select answer:", q["options"], key=f"{event}_{i}")
-        
-        show_hint = st.checkbox("Show Hint", key=f"hint_{i}")
-        if show_hint:
-            st.info(q["hint"])
-        
-        if st.button(f"Submit Q{i}", key=f"submit_{event}_{i}"):
-            if choice == q["answer"]:
-                st.success("Correct!")
-                st.session_state.scores[event] = st.session_state.scores.get(event, 0) + 1
-            else:
-                st.error(f"Incorrect! Correct answer: {q['answer']}")
-            
-            entry = f"Q{i}: {q['question']} - Answer: {q['answer']}"
-            if entry not in st.session_state.selected_questions:
-                st.session_state.selected_questions.append(entry)
+    filtered = [
+        q for q in data
+        if (not topic_filter or q['topic'].lower() == topic_filter.lower())
+        and (not difficulty_filter or q['difficulty'].lower() == difficulty_filter.lower())
+    ]
 
-# ------------------------------
-# Cheat Sheet
-# ------------------------------
-if st.button("Generate Cheat Sheet"):
-    if st.session_state.selected_questions:
-        cheat_text = "\n".join(st.session_state.selected_questions)
-        st.write("### Cheat Sheet")
-        st.text(cheat_text)
-        st.download_button("Download Cheat Sheet", cheat_text, file_name=f"{event}_cheatsheet.txt")
+    if not filtered:
+        print("⚠️ No questions match your filter.\n")
+        return
+
+    random.shuffle(filtered)
+
+    num_questions = len(filtered)
+    recommended_time = num_questions  # minutes (1 min per question)
+
+    print(f"\nNumber of questions selected: {num_questions}")
+    print(f"Recommended time: {recommended_time} minutes (1 min per question)\n")
+
+    print("Choose your time setting:")
+    print("1. Use recommended time")
+    print("2. Enter your own time")
+    choice = input("Enter choice (1 or 2): ")
+
+    if choice == "1":
+        time_limit = recommended_time
     else:
-        st.warning("No questions answered yet!")
+        try:
+            time_limit = int(input("Enter time limit in minutes: "))
+        except ValueError:
+            print("⚠️ Invalid input. Using recommended time instead.")
+            time_limit = recommended_time
 
-# ------------------------------
-# Reset Progress
-# ------------------------------
-if st.button("Reset Progress"):
-    st.session_state.selected_questions = []
-    st.session_state.scores[event] = 0
-    st.success("Progress reset!")
+    print(f"\n⏳ Timed Drill Started! You have {time_limit} minutes.\n")
 
-# ------------------------------
-# Display Scores / Progress Analytics
-# ------------------------------
-st.write("### Your Scores")
-for e, score in st.session_state.scores.items():
-    st.write(f"{e}: {score} correct answers")
+    start_time = time.time()
+    time_limit_seconds = time_limit * 60
+
+    for q in filtered:
+        elapsed = time.time() - start_time
+        remaining = time_limit_seconds - elapsed
+        if remaining <= 0:
+            print("\n⏰ Time's up! Drill ended.\n")
+            break
+
+        print(f"Question: {q['question']}")
+        input("Press Enter to see the answer...")
+        print(f"Answer: {q['answer']}")
+        print(f"⏱ Remaining time: {int(remaining // 60)} min {int(remaining % 60)} sec\n")
+
+def main():
+    data = load_data()
+
+    while True:
+        print("=== SciOly Prep Tool ===")
+        print("1. Add Question")
+        print("2. View Questions")
+        print("3. Study Mode")
+        print("4. Timed Drill")
+        print("5. Exit")
+
+        choice = input("Choose an option: ")
+
+        if choice == "1":
+            add_question(data)
+        elif choice == "2":
+            view_questions(data)
+        elif choice == "3":
+            study_mode(data)
+        elif choice == "4":
+            timed_drill(data)
+        elif choice == "5":
+            print("👋 Exiting... Good luck studying!")
+            break
+        else:
+            print("⚠️ Invalid choice. Try again.\n")
+
+if __name__ == "__main__":
+    main()
