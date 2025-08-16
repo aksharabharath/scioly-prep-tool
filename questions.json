@@ -1,707 +1,2000 @@
 [
   {
     "event": "Astronomy",
-    "question": "Which exoplanet detection method was used in the very first discovery of exoplanets around a main-sequence star, specifically 51 Pegasi b?",
-    "options": [
-      "Transit photometry",
-      "Radial velocity method",
-      "Gravitational microlensing",
-      "Astrometry"
-    ],
-    "answer": "Radial velocity method",
-    "subtopic": "Exoplanet Detection Methods",
-    "difficulty": "Easy",
-    "hint": "Think about how a star 'wobbles' due to an orbiting planet's gravitational pull.",
-    "explanation": "The first exoplanet discovered around a Sun-like star (51 Pegasi b) was detected using the radial velocity method, which measures the Doppler shift of the star's light as it is pulled back and forth by the orbiting planet."
-  },
-  {
-    "event": "Astronomy",
+    "topic": "Stellar Evolution",
     "question": "What is the primary energy source for a protostar before it begins nuclear fusion?",
-    "options": [
-      "Nuclear fission",
-      "Gravitational potential energy",
-      "Heat from cosmic microwaves",
-      "Chemical reactions"
-    ],
+    "options": ["Nuclear fission", "Gravitational potential energy", "Heat from cosmic microwaves", "Chemical reactions"],
     "answer": "Gravitational potential energy",
-    "subtopic": "Stellar Evolution",
     "difficulty": "Easy",
     "hint": "As the gas and dust cloud collapses, energy is released from the force pulling it inward.",
     "explanation": "Before a protostar is hot and dense enough for nuclear fusion to begin, its primary energy source is the conversion of gravitational potential energy into thermal energy."
   },
   {
     "event": "Astronomy",
-    "question": "What is the spectral class of a star with a surface temperature of approximately 9,900 K?",
-    "options": [
-      "B0",
-      "A0",
-      "G2",
-      "M5"
-    ],
-    "answer": "A0",
-    "subtopic": "Star Classification",
+    "topic": "Stellar Evolution",
+    "question": "Which stage comes immediately after a main-sequence star exhausts hydrogen in its core?",
+    "options": ["Red Giant", "White Dwarf", "Neutron Star", "Supernova"],
+    "answer": "Red Giant",
     "difficulty": "Medium",
-    "hint": "Recall the OBAFGKM classification sequence and the typical temperatures associated with each class.",
-    "explanation": "The OBAFGKM spectral classification sequence is arranged by temperature. A0 stars, such as Vega, have surface temperatures around 9,900 K."
+    "hint": "Think about the expansion of the star as fusion shifts to a shell around the core.",
+    "explanation": "After hydrogen is exhausted in the core, fusion continues in a shell around the core, causing the star to expand into a red giant."
   },
   {
     "event": "Astronomy",
-    "question": "A star is located at the lower left of the Hertzsprung-Russell (H-R) diagram. What is the most likely classification for this star?",
-    "options": [
-      "Red Giant",
-      "White Dwarf",
-      "Main Sequence Star",
-      "Supergiant"
-    ],
+    "topic": "Stellar Evolution",
+    "question": "What type of star will a 1 solar mass star become after it leaves the main sequence?",
+    "options": ["White Dwarf", "Neutron Star", "Black Hole", "Red Supergiant"],
     "answer": "White Dwarf",
-    "subtopic": "H-R Diagram",
-    "difficulty": "Medium",
-    "hint": "Consider the properties of stars in this region of the diagram: low luminosity and high temperature.",
-    "explanation": "The lower-left region of the H-R diagram represents stars that are hot but have low luminosity, characteristic of white dwarfs."
-  },
-  {
-    "event": "Astronomy",
-    "question": "A star has a peak wavelength of 545.6 nm. What is its approximate surface temperature in Kelvin?",
-    "options": [
-      "3,000 K",
-      "5,300 K",
-      "8,500 K",
-      "10,000 K"
-    ],
-    "answer": "5,300 K",
-    "subtopic": "Blackbody Radiation and Stellar Properties",
-    "difficulty": "Medium",
-    "hint": "Use Wien's Displacement Law: λ_max = b / T, where b ≈ 2.898 × 10⁻³ m·K.",
-    "explanation": "T = (2.898 × 10⁻³ m·K) / (5.456 × 10⁻⁷ m) ≈ 5,312 K."
-  },
-  {
-    "event": "Astronomy",
-    "question": "Why are star clusters considered useful for studying stellar evolution?",
-    "options": [
-      "All stars in a cluster have the same mass.",
-      "All stars in a cluster have the same spectral type.",
-      "All stars in a cluster have similar age and similar distance.",
-      "All stars in a cluster are in binary systems."
-    ],
-    "answer": "All stars in a cluster have similar age and similar distance.",
-    "subtopic": "Star Clusters and Stellar Evolution",
     "difficulty": "Easy",
-    "hint": "Stars started their lives at roughly the same time.",
-    "explanation": "All stars in a cluster formed from the same gas cloud, having similar age and distance, making them excellent for studying stellar evolution."
+    "hint": "Think about the typical fate of sun-like stars.",
+    "explanation": "Stars with mass similar to the Sun end their lives as white dwarfs after shedding their outer layers."
   },
   {
     "event": "Astronomy",
-    "question": "If a planet is discovered with a 5-year period of revolution orbiting a star with a mass of 1 solar mass (M☉), approximately how far away is the planet from its star?",
-    "options": [
-      "3 AU",
-      "5 AU",
-      "8 AU",
-      "11 AU"
-    ],
-    "answer": "3 AU",
-    "subtopic": "Kepler's Laws of Planetary Motion",
-    "difficulty": "Medium",
-    "hint": "Use Kepler's Third Law: P² = a³.",
-    "explanation": "For a period of 5 years, a³ ≈ 25 → a ≈ 2.92 AU."
-  },
-  {
-    "event": "Astronomy",
-    "question": "What is the Schwarzschild radius of a star with a mass of 1.99 x 10^30 kg (1 M☉)?",
-    "options": [
-      "2.95 km",
-      "1.5 km",
-      "10 km",
-      "6371 km"
-    ],
-    "answer": "2.95 km",
-    "subtopic": "Black Holes",
-    "difficulty": "Hard",
-    "hint": "Use R_s = 2GM/c².",
-    "explanation": "R_s = 2GM/c² → 2.95 km for 1 M☉."
-  },
-  {
-    "event": "Astronomy",
-    "question": "Which of the following is an example of a Type I Cepheid variable star?",
-    "options": [
-      "Delta Cephei",
-      "Mira",
-      "RR Lyrae",
-      "Polaris"
-    ],
-    "answer": "Delta Cephei",
-    "subtopic": "Variable Stars",
-    "difficulty": "Medium",
-    "hint": "The name of the type of star is derived from this specific star.",
-    "explanation": "Delta Cephei is the prototype for classical Cepheid variables."
-  },
-  {
-    "event": "Astronomy",
-    "question": "What is the absolute magnitude of a star with a luminosity 79 times that of the Sun (L☉), given that the Sun's absolute magnitude is +4.8?",
-    "options": [
-      "-3.6",
-      "4.8",
-      "7.2",
-      "-7.2"
-    ],
-    "answer": "-3.6",
-    "subtopic": "Stellar Magnitudes",
-    "difficulty": "Hard",
-    "hint": "Use M = M_sun - 2.5 log₁₀(L/L_sun).",
-    "explanation": "M = 4.8 - 2.5 log₁₀(79) ≈ -3.6."
-  },
-  {
-    "event": "Astronomy",
-    "question": "Which of the following best describes a 'hot Jupiter'?",
-    "options": [
-      "A gas giant far from its star",
-      "A gas giant close to its star",
-      "A rocky planet with high temperature",
-      "A forming gas giant"
-    ],
-    "answer": "A gas giant close to its star",
-    "subtopic": "Exoplanets",
-    "difficulty": "Medium",
-    "hint": "The name gives away its characteristics.",
-    "explanation": "Hot Jupiters are gas giants orbiting very close to their host stars."
-  },
-  {
-    "event": "Astronomy",
-    "question": "Which element is most abundant in stars?",
-    "options": [
-      "Hydrogen",
-      "Helium",
-      "Oxygen",
-      "Carbon"
-    ],
-    "answer": "Hydrogen",
-    "subtopic": "Stellar Composition",
+    "topic": "Stellar Evolution",
+    "question": "Which process powers a star during the main-sequence phase?",
+    "options": ["Hydrogen fusion", "Helium fission", "Gravitational contraction", "Carbon burning"],
+    "answer": "Hydrogen fusion",
     "difficulty": "Easy",
-    "hint": "Think about the main fuel for fusion.",
-    "explanation": "Hydrogen is the most abundant element and the primary fuel for nuclear fusion in stars."
+    "hint": "Main sequence is defined by core hydrogen burning.",
+    "explanation": "Stars fuse hydrogen into helium in their cores during the main-sequence phase, releasing energy."
   },
   {
     "event": "Astronomy",
-    "question": "Which law relates the luminosity and temperature of a star?",
-    "options": [
-      "Kepler's Law",
-      "Stefan-Boltzmann Law",
-      "Newton's Law",
-      "Hubble's Law"
-    ],
-    "answer": "Stefan-Boltzmann Law",
-    "subtopic": "Stellar Properties",
+    "topic": "Stellar Evolution",
+    "question": "Which type of star will undergo a supernova explosion?",
+    "options": ["Massive stars (>8 solar masses)", "Sun-like stars", "Brown dwarfs", "White dwarfs in isolation"],
+    "answer": "Massive stars (>8 solar masses)",
     "difficulty": "Medium",
-    "hint": "L ∝ R²T⁴",
-    "explanation": "The Stefan-Boltzmann Law states that luminosity depends on surface area and the fourth power of temperature."
+    "hint": "Only very massive stars reach the core-collapse stage.",
+    "explanation": "Stars more massive than ~8 solar masses explode as supernovae after exhausting their nuclear fuel."
   },
   {
     "event": "Astronomy",
-    "question": "Which of these is NOT a type of galaxy?",
-    "options": [
-      "Spiral",
-      "Elliptical",
-      "Irregular",
-      "Linear"
-    ],
-    "answer": "Linear",
-    "subtopic": "Galaxies",
-    "difficulty": "Easy",
-    "hint": "Three main galaxy types exist.",
-    "explanation": "Linear is not a classification of galaxies."
-  },
-  {
-    "event": "Astronomy",
-    "question": "The presence of an atmosphere on a planet's surface leads to an increase in its temperature due to which of the following phenomena?",
-    "options": [
-      "The Twomey-Albrecht effect",
-      "Rayleigh scattering",
-      "The Greenhouse effect",
-      "Absorption of longwave radiation by the planetary surface"
-    ],
-    "answer": "The Greenhouse effect",
-    "subtopic": "Planetary Science",
-    "difficulty": "Easy",
-    "hint": "Think about how gases like carbon dioxide and methane in Earth's atmosphere trap heat.",
-    "explanation": "The greenhouse effect is a process by which thermal radiation from a planetary surface is absorbed by atmospheric greenhouse gases and is re-radiated in all directions. This re-radiation of energy warms the planet's surface and lower atmosphere. The other options are related to atmospheric science but do not directly explain the increase in planetary temperature."
-  },
-  {
-    "event": "Astronomy",
-    "question": "Which stellar classification is considered a 'metal' in astronomy?",
-    "options": [
-      "Carbon",
-      "Oxygen",
-      "Silicon",
-      "All of the above"
-    ],
-    "answer": "All of the above",
-    "subtopic": "Stellar Composition",
-    "difficulty": "Easy",
-    "hint": "In astronomy, the term 'metal' has a broader meaning than its chemical definition.",
-    "explanation": "In astronomy, the term 'metals' refers to all elements heavier than hydrogen and helium. This includes elements like carbon, oxygen, nitrogen, and silicon, which are not considered metals in chemistry."
-  },
-  {
-    "event": "Astronomy",
-    "question": "What is the primary method used to determine the distance to a star within 100 parsecs?",
-    "options": [
-      "Cepheid period-luminosity relationship",
-      "Parallax",
-      "Tip of the red giant branch",
-      "Tully-Fisher relation"
-    ],
-    "answer": "Parallax",
-    "subtopic": "Distance Measurement",
+    "topic": "Stellar Evolution",
+    "question": "What is a planetary nebula?",
+    "options": ["The outer layers ejected by a dying low-mass star", "A giant planet formation region", "A cluster of stars forming", "A remnant of a supernova"],
+    "answer": "The outer layers ejected by a dying low-mass star",
     "difficulty": "Medium",
-    "hint": "This method relies on measuring the apparent shift of a star against a distant background as the Earth orbits the Sun.",
-    "explanation": "Stellar parallax is the most direct and accurate method for measuring the distance to nearby stars. It is effective for stars within approximately 100 parsecs, as beyond this distance, the parallax angle becomes too small to measure accurately. Other methods like the Cepheid period-luminosity relationship and Tully-Fisher relation are used for much greater distances."
+    "hint": "It surrounds a hot central star, forming a glowing shell.",
+    "explanation": "Planetary nebulae are formed when low- to intermediate-mass stars eject their outer envelopes at the end of their lives."
   },
   {
     "event": "Astronomy",
-    "question": "What is the primary factor that determines the evolution of a star?",
-    "options": [
-      "Its chemical composition",
-      "Its rotation rate",
-      "Its age",
-      "Its initial mass"
-    ],
+    "topic": "Stellar Evolution",
+    "question": "What determines the ultimate fate of a star?",
+    "options": ["Its initial mass", "Its rotation speed", "Its age", "Its metallicity"],
     "answer": "Its initial mass",
-    "subtopic": "Stellar Evolution",
     "difficulty": "Easy",
-    "hint": "A star's journey from birth to death is largely dictated by how much matter it starts with.",
-    "explanation": "The initial mass of a star is the single most important factor determining its life cycle, from its formation to its eventual death. It dictates the star's luminosity, temperature, lifespan, and the final state it will end up in (e.g., white dwarf, neutron star, or black hole)."
+    "hint": "Mass dictates whether it becomes a white dwarf, neutron star, or black hole.",
+    "explanation": "A star's initial mass is the main factor controlling its evolution and final state."
   },
   {
     "event": "Astronomy",
-    "question": "Which of the following describes a 'hot Jupiter'?",
-    "options": [
-      "A large gas giant planet that orbits far from its host star.",
-      "A rocky planet with a very high surface temperature.",
-      "A large gas giant planet that orbits close to its host star.",
-      "A gas giant that is in the process of forming."
-    ],
-    "answer": "A large gas giant planet that orbits close to its host star.",
-    "subtopic": "Exoplanets",
+    "topic": "Stellar Evolution",
+    "question": "During which phase do stars fuse helium into carbon in their cores?",
+    "options": ["Red Giant phase", "Main Sequence", "White Dwarf phase", "Protostar phase"],
+    "answer": "Red Giant phase",
     "difficulty": "Medium",
-    "hint": "The name of this type of exoplanet literally gives away its characteristics.",
-    "explanation": "A 'hot Jupiter' is a class of exoplanets that are gas giants with characteristics similar to Jupiter but that orbit very close to their host star, resulting in extremely high surface temperatures."
+    "hint": "Occurs after core hydrogen is depleted.",
+    "explanation": "Red giants fuse helium into carbon and oxygen in their cores once hydrogen is exhausted."
   },
   {
     "event": "Astronomy",
-    "question": "If a star has a temperature of 22,000 K, what is the peak wavelength of its blackbody radiation according to Wien's Law?",
-    "options": [
-      "132 nm",
-      "66 nm",
-      "1.32 microns",
-      "13.2 microns"
-    ],
-    "answer": "132 nm",
-    "subtopic": "Astrophysics",
+    "topic": "Stellar Evolution",
+    "question": "Which of the following describes a T Tauri star?",
+    "options": ["A young pre-main-sequence star", "A dying white dwarf", "A massive supergiant", "A neutron star"],
+    "answer": "A young pre-main-sequence star",
+    "difficulty": "Medium",
+    "hint": "It is still contracting and not yet fusing hydrogen.",
+    "explanation": "T Tauri stars are young stars still contracting towards the main sequence, showing variability and strong stellar winds."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "Which star type has exhausted helium in its core and fuses heavier elements in shells?",
+    "options": ["Asymptotic Giant Branch star", "Red Dwarf", "Main Sequence Star", "T Tauri star"],
+    "answer": "Asymptotic Giant Branch star",
     "difficulty": "Hard",
-    "hint": "Wien's Law is given by the formula $\\lambda_{peak} = b/T$, where $b$ is Wien's displacement constant (approximately $2.898 \\times 10^{-3}$ m·K).",
-    "explanation": "Using Wien's Law, $\\lambda_{peak} = (2.898 \\times 10^{-3} \\text{ m·K}) / 22000 \\text{ K}$. This calculates to $1.317 \\times 10^{-7}$ m, or 131.7 nm, which is approximately 132 nm. This wavelength is in the ultraviolet part of the electromagnetic spectrum."
+    "hint": "Occurs in low- to intermediate-mass stars before they become planetary nebulae.",
+    "explanation": "AGB stars have inert cores of carbon and oxygen and fuse helium and hydrogen in shells around the core."
   },
   {
     "event": "Astronomy",
-    "question": "Based on the Hertzsprung-Russell (H-R) diagram, what is the spectral class for a star with an absolute magnitude of +7.5 and a temperature of 3500 Kelvin?",
-    "options": [
-      "G",
-      "K",
-      "F",
-      "A"
-    ],
-    "answer": "K",
-    "subtopic": "H-R Diagram",
+    "topic": "Stellar Evolution",
+    "question": "Which process occurs in massive stars after helium burning?",
+    "options": ["Carbon, neon, oxygen, and silicon fusion", "Hydrogen fusion only", "Proton-proton chain", "Lithium burning"],
+    "answer": "Carbon, neon, oxygen, and silicon fusion",
+    "difficulty": "Hard",
+    "hint": "These stages build up an iron core.",
+    "explanation": "Massive stars undergo sequential fusion of heavier elements until iron accumulates in the core, leading to supernova."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "What is the Chandrasekhar limit?",
+    "options": ["Maximum mass of a stable white dwarf", "Minimum mass for fusion", "Limit of a neutron star", "Maximum mass of a main sequence star"],
+    "answer": "Maximum mass of a stable white dwarf",
+    "difficulty": "Hard",
+    "hint": "Above this mass, electron degeneracy pressure can't support the star.",
+    "explanation": "The Chandrasekhar limit is ~1.44 solar masses; beyond this, a white dwarf collapses into a neutron star or black hole."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "Which type of supernova results from the collapse of a massive star's core?",
+    "options": ["Type II", "Type Ia", "Type Ib", "Type Ic"],
+    "answer": "Type II",
     "difficulty": "Medium",
-    "hint": "Remember the OBAFGKM spectral sequence and its relation to stellar temperature.",
-    "explanation": "On a standard H-R diagram, a temperature of 3500 K corresponds to the K spectral class. Stars in this range are cooler and appear orange to red. An absolute magnitude of +7.5 places it below the main sequence, in the realm of subdwarfs or cool main-sequence stars."
+    "hint": "Occurs in stars with hydrogen in their outer layers.",
+    "explanation": "Type II supernovae are core-collapse explosions of massive stars with hydrogen-rich envelopes."
   },
   {
     "event": "Astronomy",
-    "question": "What is the parallax angle, in arcseconds, for a star located 1330 parsecs away from Earth?",
-    "options": [
-      "1330",
-      "0.00075",
-      "0.75",
-      "133"
-    ],
-    "answer": "0.00075",
-    "subtopic": "Celestial Navigation",
+    "topic": "Stellar Evolution",
+    "question": "Which star type is supported by electron degeneracy pressure?",
+    "options": ["White Dwarf", "Neutron Star", "Red Giant", "Main Sequence Star"],
+    "answer": "White Dwarf",
     "difficulty": "Medium",
-    "hint": "The relationship between parallax and distance is an inverse one: $d = 1/p$, where $d$ is in parsecs and $p$ is in arcseconds.",
-    "explanation": "The relationship between distance ($d$) and parallax angle ($p$) is $d = 1/p$. Therefore, to find the parallax angle, you rearrange the formula to $p = 1/d$. For a distance of 1330 parsecs, the parallax angle is $1/1330 = 0.00075$ arcseconds."
+    "hint": "Its collapse is halted by quantum mechanical pressure of electrons.",
+    "explanation": "White dwarfs are stabilized by electron degeneracy pressure against gravitational collapse."
   },
   {
     "event": "Astronomy",
-    "question": "A protostar primarily generates its luminosity through what process?",
-    "options": [
-      "Hydrogen fusion in its core.",
-      "Collapse from a stellar nebula.",
-      "Gravitational collapse and heating.",
-      "Lithium burning."
-    ],
-    "answer": "Gravitational collapse and heating.",
-    "subtopic": "Stellar Evolution",
+    "topic": "Stellar Evolution",
+    "question": "What is a red supergiant?",
+    "options": ["A massive star in late evolutionary stage", "A low-mass main sequence star", "A white dwarf precursor", "A young protostar"],
+    "answer": "A massive star in late evolutionary stage",
+    "difficulty": "Medium",
+    "hint": "These stars can explode as Type II supernovae.",
+    "explanation": "Red supergiants are massive, evolved stars that have expanded and cooled after leaving the main sequence."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "Which factor primarily controls the luminosity of a main-sequence star?",
+    "options": ["Mass", "Age", "Metallicity", "Rotation"],
+    "answer": "Mass",
     "difficulty": "Easy",
-    "hint": "A protostar hasn't started fusion yet. Where does its energy come from?",
-    "explanation": "A protostar is a very young star that is still in the process of free-fall gravitational collapse. Before the core becomes hot and dense enough for significant nuclear fusion to begin, the immense gravitational energy of the collapsing cloud is converted into thermal energy, which is released as luminosity."
+    "hint": "More massive stars are brighter and hotter.",
+    "explanation": "On the main sequence, a star’s luminosity strongly depends on its mass."
   },
   {
     "event": "Astronomy",
-    "question": "In the context of exoplanet detection, how is the radius of a transiting planet estimated from a light curve?",
-    "options": [
-      "By analyzing the orbital period of the planet.",
-      "By measuring the depth of the star's light decrease during the transit.",
-      "By calculating the star's radial velocity.",
-      "By observing the planet directly."
-    ],
-    "answer": "By measuring the depth of the star's light decrease during the transit.",
+    "topic": "Stellar Evolution",
+    "question": "Which stars will never reach the red giant phase?",
+    "options": ["Brown dwarfs", "Sun-like stars", "Massive stars", "White dwarfs"],
+    "answer": "Brown dwarfs",
+    "difficulty": "Medium",
+    "hint": "These objects do not sustain hydrogen fusion in their cores.",
+    "explanation": "Brown dwarfs are too low in mass to ignite hydrogen fusion, so they do not evolve into red giants."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "What is the end stage of a star with initial mass between 8 and 20 solar masses?",
+    "options": ["Neutron Star", "White Dwarf", "Black Hole", "Red Giant"],
+    "answer": "Neutron Star",
+    "difficulty": "Medium",
+    "hint": "Electron degeneracy cannot support it, but neutron degeneracy can.",
+    "explanation": "Stars with 8–20 solar masses undergo core-collapse supernovae, leaving behind neutron stars."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "What is the main difference between Type Ia and Type II supernovae?",
+    "options": ["Progenitor system", "Explosion brightness", "Remnant type", "All of the above"],
+    "answer": "All of the above",
+    "difficulty": "Hard",
+    "hint": "Consider how the progenitor and mechanism differ.",
+    "explanation": "Type Ia supernovae come from white dwarfs in binaries, while Type II are massive star core collapses; they differ in brightness and remnants."
+  }
+]
+[
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "What are the two primary properties plotted on an H-R diagram?",
+    "options": ["Luminosity vs Temperature", "Mass vs Radius", "Brightness vs Distance", "Age vs Composition"],
+    "answer": "Luminosity vs Temperature",
+    "difficulty": "Easy",
+    "hint": "It’s used to classify stars and understand evolution.",
+    "explanation": "The Hertzsprung-Russell diagram plots stellar luminosity against surface temperature to classify stars and track their evolutionary stages."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "Which spectral class represents the hottest stars?",
+    "options": ["O", "B", "A", "M"],
+    "answer": "O",
+    "difficulty": "Easy",
+    "hint": "Recall the OBAFGKM sequence.",
+    "explanation": "O-type stars are extremely hot and blue, with surface temperatures above 30,000 K."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "Which color corresponds to a G-type star?",
+    "options": ["Blue", "White", "Yellow", "Red"],
+    "answer": "Yellow",
+    "difficulty": "Easy",
+    "hint": "The Sun is a G-type star.",
+    "explanation": "G-type stars, like the Sun, are yellow and have surface temperatures around 5,500–6,000 K."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "What does the luminosity class I represent?",
+    "options": ["Supergiants", "Giants", "Main Sequence", "White Dwarfs"],
+    "answer": "Supergiants",
+    "difficulty": "Medium",
+    "hint": "Think about the largest and most luminous stars.",
+    "explanation": "Luminosity class I denotes supergiant stars with very high luminosity and large radii."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "Which property primarily determines a star’s position on the main sequence?",
+    "options": ["Mass", "Metallicity", "Age", "Rotation"],
+    "answer": "Mass",
+    "difficulty": "Easy",
+    "hint": "Heavier stars are hotter and brighter.",
+    "explanation": "Mass is the key factor determining a main-sequence star's temperature, luminosity, and lifespan."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "What type of star is Vega?",
+    "options": ["A0V", "G2V", "M5III", "K1I"],
+    "answer": "A0V",
+    "difficulty": "Medium",
+    "hint": "Look at spectral class and luminosity class.",
+    "explanation": "Vega is an A0 main-sequence star (A0V) with high surface temperature and white-blue color."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "Which spectral class has the coolest stars?",
+    "options": ["O", "F", "K", "M"],
+    "answer": "M",
+    "difficulty": "Easy",
+    "hint": "Red stars are the coolest.",
+    "explanation": "M-type stars are red and have the lowest surface temperatures (~2,400–3,700 K)."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "Which stars are classified as white dwarfs?",
+    "options": ["Very hot, dim stars", "Cool, luminous giants", "Red supergiants", "Protostars"],
+    "answer": "Very hot, dim stars",
+    "difficulty": "Medium",
+    "hint": "Think about compact stellar remnants.",
+    "explanation": "White dwarfs are hot but have low luminosity due to their small size, representing the final stage of low-mass stars."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "How is stellar mass generally estimated?",
+    "options": ["Using binary star orbits", "From color alone", "From spectral type only", "From apparent brightness"],
+    "answer": "Using binary star orbits",
+    "difficulty": "Medium",
+    "hint": "Kepler’s laws help determine mass in binaries.",
+    "explanation": "Stellar masses are most accurately measured in binary systems via orbital motion using Kepler’s laws."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "Which type of main-sequence star has the longest lifespan?",
+    "options": ["O-type", "A-type", "G-type", "M-type"],
+    "answer": "M-type",
+    "difficulty": "Easy",
+    "hint": "Smaller stars burn fuel more slowly.",
+    "explanation": "M-type red dwarfs are low-mass stars that burn hydrogen slowly, living for hundreds of billions of years."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "Which property affects both luminosity and temperature of a main-sequence star?",
+    "options": ["Mass", "Metallicity", "Magnetic field", "Age"],
+    "answer": "Mass",
+    "difficulty": "Easy",
+    "hint": "Higher mass → higher core pressure and temperature.",
+    "explanation": "The mass of a star determines its core pressure and temperature, affecting its luminosity and spectral class."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "A star with spectral type K and luminosity class III is:",
+    "options": ["Orange Giant", "Red Dwarf", "White Dwarf", "Blue Main Sequence"],
+    "answer": "Orange Giant",
+    "difficulty": "Medium",
+    "hint": "Combine spectral class color with luminosity class size.",
+    "explanation": "K-type stars are orange; class III indicates a giant, hence an orange giant."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "Which factor contributes to the color of a star?",
+    "options": ["Surface temperature", "Distance", "Age", "Magnetic field"],
+    "answer": "Surface temperature",
+    "difficulty": "Easy",
+    "hint": "Hot stars are blue, cool stars are red.",
+    "explanation": "The surface temperature of a star determines its color: hotter stars appear blue/white, cooler stars appear red/orange."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "Which unit is used to express stellar luminosity?",
+    "options": ["Solar luminosities (L☉)", "Joules", "Parsecs", "Kelvin"],
+    "answer": "Solar luminosities (L☉)",
+    "difficulty": "Medium",
+    "hint": "Compare to the Sun’s output.",
+    "explanation": "Stellar luminosity is often expressed in terms of the Sun’s luminosity (L☉) for comparison."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "Which star is hotter: an A0V star or a G2V star?",
+    "options": ["A0V", "G2V", "Both same", "Cannot determine"],
+    "answer": "A0V",
+    "difficulty": "Easy",
+    "hint": "A comes before G in the OBAFGKM sequence.",
+    "explanation": "A0V stars are hotter and more massive than G2V stars like the Sun."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "Which stars are considered main-sequence stars?",
+    "options": ["Stars fusing hydrogen in their cores", "Stars fusing helium in shells", "White dwarfs", "Protostars"],
+    "answer": "Stars fusing hydrogen in their cores",
+    "difficulty": "Easy",
+    "hint": "The defining feature of main-sequence stars.",
+    "explanation": "Main-sequence stars are defined by hydrogen fusion in their cores, which provides energy for stability."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "Which type of star would have the highest surface gravity?",
+    "options": ["White dwarf", "Red giant", "Main-sequence star", "Supergiant"],
+    "answer": "White dwarf",
+    "difficulty": "Medium",
+    "hint": "Think of small radius with high mass.",
+    "explanation": "White dwarfs are very compact, giving them extremely high surface gravity."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "Which type of star is often used as a standard candle for distance measurements?",
+    "options": ["Cepheid variable", "Red dwarf", "White dwarf", "T Tauri star"],
+    "answer": "Cepheid variable",
+    "difficulty": "Medium",
+    "hint": "Its luminosity is related to its pulsation period.",
+    "explanation": "Cepheid variables have a well-defined period-luminosity relationship, making them excellent standard candles."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Properties & Classification",
+    "question": "Which class of stars are blue, massive, and short-lived?",
+    "options": ["O-type main-sequence stars", "M-type stars", "K-type giants", "G-type stars"],
+    "answer": "O-type main-sequence stars",
+    "difficulty": "Medium",
+    "hint": "These stars burn fuel quickly due to high mass.",
+    "explanation": "O-type stars are extremely hot, massive, and have lifespans of only a few million years."
+  }
+]
+[
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "Which method detects exoplanets by measuring a star's periodic wobble?",
+    "options": ["Transit method", "Radial velocity method", "Direct imaging", "Microlensing"],
+    "answer": "Radial velocity method",
+    "difficulty": "Easy",
+    "hint": "Also called the Doppler method.",
+    "explanation": "The radial velocity method detects variations in the star’s velocity due to gravitational pull from orbiting planets."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "The transit method measures exoplanets by:",
+    "options": ["Observing the star’s wobble", "Detecting light dips as a planet passes in front", "Measuring gravitational lensing", "Capturing images directly"],
+    "answer": "Detecting light dips as a planet passes in front",
+    "difficulty": "Easy",
+    "hint": "Think of a planet eclipsing its star.",
+    "explanation": "The transit method detects the small decrease in starlight when a planet passes between the star and observer."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "Which planet type is a 'hot Jupiter'?",
+    "options": ["A small rocky planet", "A gas giant close to its star", "A gas giant far from its star", "An icy planet"],
+    "answer": "A gas giant close to its star",
+    "difficulty": "Medium",
+    "hint": "Think of Jupiter but extremely hot.",
+    "explanation": "Hot Jupiters are gas giants similar to Jupiter but orbit very close to their host stars, resulting in high temperatures."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "Which property can be determined from a planet’s transit depth?",
+    "options": ["Mass", "Radius", "Distance", "Composition"],
+    "answer": "Radius",
+    "difficulty": "Medium",
+    "hint": "The deeper the transit, the larger the planet.",
+    "explanation": "The transit depth indicates the ratio of the planet's area to the star's area, allowing calculation of the planet's radius."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "Kepler’s Third Law relates which two quantities?",
+    "options": ["Orbital period and mass", "Orbital period and distance", "Radius and mass", "Luminosity and temperature"],
+    "answer": "Orbital period and distance",
+    "difficulty": "Medium",
+    "hint": "P² ∝ a³.",
+    "explanation": "Kepler’s Third Law shows that the square of a planet’s orbital period is proportional to the cube of the semi-major axis of its orbit."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "Which exoplanet type is likely rocky and Earth-like?",
+    "options": ["Gas giants", "Hot Jupiters", "Terrestrial planets", "Ice giants"],
+    "answer": "Terrestrial planets",
+    "difficulty": "Easy",
+    "hint": "Small, dense, with solid surfaces.",
+    "explanation": "Terrestrial planets are rocky and similar to Earth or Mars in composition and structure."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "Which phenomenon causes a planet to have a higher surface temperature than expected?",
+    "options": ["Greenhouse effect", "Tidal locking", "Magnetic field", "Solar wind"],
+    "answer": "Greenhouse effect",
+    "difficulty": "Easy",
+    "hint": "Think CO₂ and methane trapping heat.",
+    "explanation": "A planet’s atmosphere can trap infrared radiation, warming the surface beyond what would be expected from sunlight alone."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "Which property is most important for determining a planet's orbit?",
+    "options": ["Mass of the planet", "Mass of the star", "Radius of the planet", "Composition of the planet"],
+    "answer": "Mass of the star",
+    "difficulty": "Medium",
+    "hint": "Heavier stars exert stronger gravitational pull.",
+    "explanation": "The mass of the star primarily determines the orbital period and velocity of a planet according to Newton’s laws of gravitation."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "Which exoplanet is likely to have the longest orbital period?",
+    "options": ["Close-in hot Jupiter", "Terrestrial planet in habitable zone", "Gas giant far from star", "Rogue planet"],
+    "answer": "Gas giant far from star",
+    "difficulty": "Medium",
+    "hint": "Farther planets orbit more slowly.",
+    "explanation": "Planets farther from their star have longer orbital periods due to weaker gravitational pull and longer orbital paths."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "Which is a method for direct imaging of exoplanets?",
+    "options": ["Blocking starlight with coronagraph", "Measuring radial velocity", "Observing transits", "Timing pulsars"],
+    "answer": "Blocking starlight with coronagraph",
+    "difficulty": "Hard",
+    "hint": "You need to reduce the star’s glare.",
+    "explanation": "A coronagraph blocks the star’s light to allow faint light from orbiting planets to be observed directly."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "What is the habitable zone?",
+    "options": ["Region where liquid water can exist", "Distance where stars are cold", "Location of asteroid belts", "Region of supernovae"],
+    "answer": "Region where liquid water can exist",
+    "difficulty": "Easy",
+    "hint": "Goldilocks zone.",
+    "explanation": "The habitable zone around a star is where temperatures allow liquid water to exist on a planet’s surface."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "Which planet discovery method relies on gravitational lensing?",
+    "options": ["Transit method", "Radial velocity", "Microlensing", "Direct imaging"],
+    "answer": "Microlensing",
+    "difficulty": "Hard",
+    "hint": "It uses background star light bending.",
+    "explanation": "Microlensing detects planets by observing how a planet’s gravity bends light from a distant background star."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "What can a light curve tell us about a transiting exoplanet?",
+    "options": ["Orbital period and radius", "Mass and composition", "Temperature and rotation", "Distance from Earth"],
+    "answer": "Orbital period and radius",
+    "difficulty": "Medium",
+    "hint": "Transit depth and timing are key.",
+    "explanation": "The depth of the transit gives radius, and the time between transits gives orbital period."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "Which characteristic defines a gas giant?",
+    "options": ["Large, gaseous, low density", "Small, rocky, high density", "Icy, small", "Close-in, hot"],
+    "answer": "Large, gaseous, low density",
+    "difficulty": "Easy",
+    "hint": "Think Jupiter and Saturn.",
+    "explanation": "Gas giants are large planets composed mostly of hydrogen and helium with low overall density."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "Which exoplanets are called 'super-Earths'?",
+    "options": ["Planets larger than Earth but smaller than Neptune", "Planets smaller than Earth", "Gas giants", "Rogue planets"],
+    "answer": "Planets larger than Earth but smaller than Neptune",
+    "difficulty": "Medium",
+    "hint": "Mass is higher than Earth but not massive like Jupiter.",
+    "explanation": "Super-Earths are exoplanets with masses between Earth and Neptune, potentially rocky or gaseous."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "Which effect can increase the temperature of a tidally locked exoplanet?",
+    "options": ["Greenhouse effect", "Magnetic field", "Orbital resonance", "Rotation rate"],
+    "answer": "Greenhouse effect",
+    "difficulty": "Medium",
+    "hint": "Heat trapped by atmosphere on the star-facing side.",
+    "explanation": "Tidally locked planets with atmospheres can trap heat via the greenhouse effect, raising surface temperatures."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "What is a planet’s semi-major axis?",
+    "options": ["Average distance from its star", "Orbital speed", "Radius of the planet", "Rotational period"],
+    "answer": "Average distance from its star",
+    "difficulty": "Medium",
+    "hint": "Kepler’s Third Law uses this value.",
+    "explanation": "The semi-major axis is half the longest diameter of an elliptical orbit, representing the planet’s average distance from the star."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Science",
+    "question": "Which planetary property can often be inferred from its density?",
+    "options": ["Composition", "Rotation", "Orbital period", "Magnetic field"],
+    "answer": "Composition",
+    "difficulty": "Medium",
+    "hint": "Compare mass and radius.",
+    "explanation": "Density helps distinguish rocky, gaseous, or icy planets based on their mass and radius."
+  }
+]
+[
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "What is the primary factor that determines a star’s lifecycle?",
+    "options": ["Its rotation rate", "Its chemical composition", "Its initial mass", "Its age"],
+    "answer": "Its initial mass",
+    "difficulty": "Easy",
+    "hint": "Think about what dictates how long a star lives and how it dies.",
+    "explanation": "A star's initial mass determines its luminosity, lifespan, and final state (white dwarf, neutron star, or black hole)."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "Which phase comes after a main sequence star burns all its hydrogen in the core?",
+    "options": ["Red giant", "White dwarf", "Supernova", "Protostar"],
+    "answer": "Red giant",
+    "difficulty": "Easy",
+    "hint": "The star expands and cools.",
+    "explanation": "After hydrogen is depleted, the core contracts and the outer layers expand, forming a red giant."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "What is the final stage of a low-mass star like the Sun?",
+    "options": ["Neutron star", "Black hole", "White dwarf", "Red supergiant"],
+    "answer": "White dwarf",
+    "difficulty": "Easy",
+    "hint": "It’s the remnant core left after outer layers are ejected.",
+    "explanation": "Low-mass stars eject their outer layers as planetary nebulae, leaving behind a dense white dwarf."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "Which stellar remnants can result from a supernova of a massive star?",
+    "options": ["White dwarf", "Neutron star", "Black hole", "Both B and C"],
+    "answer": "Both B and C",
+    "difficulty": "Medium",
+    "hint": "Depends on the star’s mass.",
+    "explanation": "Massive stars end as neutron stars or black holes depending on the mass of the remaining core."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "During which process do stars convert hydrogen into helium in their cores?",
+    "options": ["Nuclear fission", "Gravitational collapse", "Nuclear fusion", "Electron capture"],
+    "answer": "Nuclear fusion",
+    "difficulty": "Easy",
+    "hint": "This process releases energy powering the star.",
+    "explanation": "Main sequence stars produce energy by fusing hydrogen into helium in their cores."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "What causes a star to become a supernova?",
+    "options": ["Core collapse after fusion ends", "Excess rotation", "Magnetic field interaction", "Planetary collisions"],
+    "answer": "Core collapse after fusion ends",
+    "difficulty": "Medium",
+    "hint": "Massive stars explode when the core cannot support gravity.",
+    "explanation": "When fusion ceases in a massive star, the core collapses, leading to a supernova explosion."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "Which type of star is fusing helium in its core?",
+    "options": ["Main sequence star", "Red giant", "White dwarf", "Protostar"],
+    "answer": "Red giant",
+    "difficulty": "Medium",
+    "hint": "Hydrogen burning has ended in the core.",
+    "explanation": "Red giants burn helium into carbon in their cores after exhausting hydrogen."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "What is a protostar?",
+    "options": ["A dying star", "A star in formation", "A neutron star", "A black hole"],
+    "answer": "A star in formation",
+    "difficulty": "Easy",
+    "hint": "It hasn’t started fusion yet.",
+    "explanation": "A protostar is a contracting cloud of gas and dust on its way to becoming a main sequence star."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "Which stage of stellar evolution produces planetary nebulae?",
+    "options": ["Main sequence", "Red giant", "White dwarf", "Supernova"],
+    "answer": "Red giant",
+    "difficulty": "Medium",
+    "hint": "Outer layers are ejected.",
+    "explanation": "Low- and intermediate-mass red giants shed their outer layers to form planetary nebulae."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "What determines whether a star becomes a neutron star or black hole?",
+    "options": ["Initial mass", "Rotation speed", "Composition", "Location in galaxy"],
+    "answer": "Initial mass",
+    "difficulty": "Medium",
+    "hint": "The more massive the core, the denser the remnant.",
+    "explanation": "Massive cores produce neutron stars or black holes after supernovae; lower-mass cores become white dwarfs."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "Which is the hottest and most massive main sequence star?",
+    "options": ["O-type", "B-type", "G-type", "M-type"],
+    "answer": "O-type",
+    "difficulty": "Medium",
+    "hint": "Look at the OBAFGKM classification.",
+    "explanation": "O-type stars are very hot, luminous, and massive compared to other main sequence stars."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "Which element is primarily produced during helium fusion in stars?",
+    "options": ["Hydrogen", "Carbon", "Oxygen", "Iron"],
+    "answer": "Carbon",
+    "difficulty": "Medium",
+    "hint": "Triple-alpha process.",
+    "explanation": "Helium nuclei fuse in the triple-alpha process to form carbon in stellar cores."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "What defines a white dwarf’s size?",
+    "options": ["Mass only", "Electron degeneracy pressure", "Temperature", "Rotation"],
+    "answer": "Electron degeneracy pressure",
+    "difficulty": "Hard",
+    "hint": "Quantum mechanics prevents further collapse.",
+    "explanation": "Electron degeneracy pressure balances gravity in white dwarfs, defining their compact size."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "Which stars undergo a helium flash?",
+    "options": ["Low-mass stars", "High-mass stars", "Protostars", "White dwarfs"],
+    "answer": "Low-mass stars",
+    "difficulty": "Medium",
+    "hint": "Sudden ignition in degenerate cores.",
+    "explanation": "Low-mass stars ignite helium explosively in their degenerate cores, called a helium flash."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "What is the Chandrasekhar limit?",
+    "options": ["Max mass of a neutron star", "Max mass of a white dwarf", "Min mass of a black hole", "Max size of main sequence star"],
+    "answer": "Max mass of a white dwarf",
+    "difficulty": "Hard",
+    "hint": "About 1.4 solar masses.",
+    "explanation": "White dwarfs above 1.4 solar masses cannot remain stable and collapse into neutron stars or black holes."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "Which phase is longest in a star's life?",
+    "options": ["Protostar", "Main sequence", "Red giant", "Supernova"],
+    "answer": "Main sequence",
+    "difficulty": "Easy",
+    "hint": "Stars spend most of their lives burning hydrogen.",
+    "explanation": "The main sequence phase is the longest, during which stars fuse hydrogen into helium."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "Which star type ends life in a core-collapse supernova?",
+    "options": ["High-mass stars", "Low-mass stars", "White dwarfs", "Brown dwarfs"],
+    "answer": "High-mass stars",
+    "difficulty": "Medium",
+    "hint": "Think stars heavier than ~8 solar masses.",
+    "explanation": "High-mass stars (>8 M☉) explode as supernovae after fusion ceases in their cores."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "What is the primary energy source for a protostar?",
+    "options": ["Gravitational collapse", "Hydrogen fusion", "Helium fusion", "Nuclear fission"],
+    "answer": "Gravitational collapse",
+    "difficulty": "Easy",
+    "hint": "Energy comes from contraction, not fusion.",
+    "explanation": "A protostar shines due to energy released as it contracts under gravity before fusion begins."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution & Lifecycles",
+    "question": "Which element marks the end of fusion in massive stars before supernova?",
+    "options": ["Carbon", "Neon", "Iron", "Oxygen"],
+    "answer": "Iron",
+    "difficulty": "Hard",
+    "hint": "Fusion of this element consumes energy rather than producing it.",
+    "explanation": "Iron cannot release energy via fusion, leading to core collapse and supernova."
+  }
+]
+[
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "What does the spectral type of a star primarily indicate?",
+    "options": ["Mass", "Temperature", "Distance", "Age"],
+    "answer": "Temperature",
+    "difficulty": "Easy",
+    "hint": "Remember the OBAFGKM sequence.",
+    "explanation": "Spectral types classify stars by surface temperature and color, with O being hottest and M being coolest."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "Which type of star is the hottest main sequence star?",
+    "options": ["O-type", "B-type", "G-type", "M-type"],
+    "answer": "O-type",
+    "difficulty": "Medium",
+    "hint": "Check the OBAFGKM order.",
+    "explanation": "O-type stars are very hot, massive, and luminous."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "Which type of star is the coolest and least massive?",
+    "options": ["O-type", "B-type", "G-type", "M-type"],
+    "answer": "M-type",
+    "difficulty": "Medium",
+    "hint": "It appears red in color.",
+    "explanation": "M-type stars are red dwarfs, the coolest and smallest main sequence stars."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "What does the luminosity class of a star indicate?",
+    "options": ["Size and brightness", "Mass", "Distance", "Rotation"],
+    "answer": "Size and brightness",
+    "difficulty": "Medium",
+    "hint": "It differentiates giants from dwarfs.",
+    "explanation": "Luminosity class (I-V) categorizes stars by size and intrinsic brightness."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "Which spectral type is the Sun classified as?",
+    "options": ["O", "B", "G", "M"],
+    "answer": "G",
+    "difficulty": "Easy",
+    "hint": "It is a yellow star.",
+    "explanation": "The Sun is a G-type main sequence star (G2V)."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "A star with high luminosity but low temperature is classified as?",
+    "options": ["Red giant", "White dwarf", "Blue giant", "Main sequence"],
+    "answer": "Red giant",
+    "difficulty": "Medium",
+    "hint": "It’s bright but cool.",
+    "explanation": "Red giants are luminous due to large size, but have cooler surface temperatures."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "What is the relationship between a star’s color and temperature?",
+    "options": ["Red is hotter", "Blue is cooler", "Blue is hotter", "Color does not indicate temperature"],
+    "answer": "Blue is hotter",
+    "difficulty": "Easy",
+    "hint": "Think of the hottest stars.",
+    "explanation": "Blue stars are hottest, while red stars are coolest."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "Which class of stars are known as dwarfs?",
+    "options": ["Luminosity class V", "Luminosity class I", "Luminosity class III", "Luminosity class II"],
+    "answer": "Luminosity class V",
+    "difficulty": "Medium",
+    "hint": "Main sequence stars fall here.",
+    "explanation": "Class V corresponds to main sequence (dwarf) stars."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "Which star type is nearing the end of its life and has expanded in size?",
+    "options": ["Red giant", "White dwarf", "Blue giant", "Protostar"],
+    "answer": "Red giant",
+    "difficulty": "Medium",
+    "hint": "It’s post-main-sequence.",
+    "explanation": "Stars expand into red giants when hydrogen is exhausted in their cores."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "Which stars are located on the main sequence of the H-R diagram?",
+    "options": ["Red giants", "White dwarfs", "Blue supergiants", "Stars fusing hydrogen in cores"],
+    "answer": "Stars fusing hydrogen in cores",
+    "difficulty": "Easy",
+    "hint": "Think energy source.",
+    "explanation": "Main sequence stars are stable, fusing hydrogen into helium in their cores."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "Which spectral type has the strongest hydrogen absorption lines?",
+    "options": ["O", "B", "A", "M"],
+    "answer": "A",
+    "difficulty": "Medium",
+    "hint": "Check the Balmer series.",
+    "explanation": "A-type stars show the strongest Balmer hydrogen lines."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "Which of these is not a luminosity class?",
+    "options": ["I", "III", "V", "G"],
+    "answer": "G",
+    "difficulty": "Easy",
+    "hint": "Luminosity classes are Roman numerals.",
+    "explanation": "G is a spectral type, not a luminosity class."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "Blue giants are usually of which spectral type?",
+    "options": ["O and B", "A and F", "G and K", "M"],
+    "answer": "O and B",
+    "difficulty": "Medium",
+    "hint": "Hot, massive stars.",
+    "explanation": "Blue giants are massive, luminous, and hot, usually spectral types O or B."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "Red dwarfs have which properties?",
+    "options": ["High mass and luminosity", "Low mass and temperature", "Blue in color", "Explode as supernovae"],
+    "answer": "Low mass and temperature",
+    "difficulty": "Easy",
+    "hint": "Think of the most common stars in the Milky Way.",
+    "explanation": "Red dwarfs are low-mass, cool, and faint stars, making them the most common type."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "Which property primarily determines a star’s color?",
+    "options": ["Mass", "Temperature", "Age", "Luminosity"],
+    "answer": "Temperature",
+    "difficulty": "Easy",
+    "hint": "Hot stars appear blue, cool stars red.",
+    "explanation": "Surface temperature determines the color of a star."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "Which of these stars is the most luminous?",
+    "options": ["O-type supergiant", "G-type main sequence", "M-type dwarf", "B-type subgiant"],
+    "answer": "O-type supergiant",
+    "difficulty": "Medium",
+    "hint": "Luminosity depends on size and temperature.",
+    "explanation": "O-type supergiants are extremely luminous due to high mass and temperature."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "Which sequence represents spectral types from hottest to coolest?",
+    "options": ["OBAFGKM", "MKGFBAO", "GKMABFO", "ABFGKMO"],
+    "answer": "OBAFGKM",
+    "difficulty": "Easy",
+    "hint": "Mnemonic: Oh Be A Fine Girl/Guy Kiss Me.",
+    "explanation": "The standard OBAFGKM sequence orders stars from hottest to coolest."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "Which type of star has ceased core hydrogen fusion?",
+    "options": ["Red giant", "Main sequence", "Blue dwarf", "Protostar"],
+    "answer": "Red giant",
+    "difficulty": "Medium",
+    "hint": "It’s post-main sequence.",
+    "explanation": "Red giants have exhausted hydrogen in the core and are fusing helium or heavier elements."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stars & Classification",
+    "question": "Which property is not part of spectral classification?",
+    "options": ["Temperature", "Luminosity", "Chemical composition", "Distance"],
+    "answer": "Distance",
+    "difficulty": "Easy",
+    "hint": "Spectral classification is intrinsic.",
+    "explanation": "Spectral classification depends on temperature, luminosity, and composition, not distance."
+  }
+]
+[
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "What is a 'hot Jupiter'?",
+    "options": ["A small rocky planet close to its star", "A gas giant close to its star", "A gas giant far from its star", "A planet still forming"],
+    "answer": "A gas giant close to its star",
+    "difficulty": "Medium",
+    "hint": "Name gives away its properties.",
+    "explanation": "Hot Jupiters are gas giants similar to Jupiter but orbit very close to their host star."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "Which method detects exoplanets by measuring star brightness dips?",
+    "options": ["Radial velocity", "Transit photometry", "Astrometry", "Gravitational microlensing"],
+    "answer": "Transit photometry",
+    "difficulty": "Easy",
+    "hint": "Look for changes in light over time.",
+    "explanation": "Transit photometry detects planets by observing the dip in brightness when a planet passes in front of its star."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "The radial velocity method detects exoplanets by measuring?",
+    "options": ["Star wobble", "Planet size", "Transit duration", "Planet atmosphere"],
+    "answer": "Star wobble",
+    "difficulty": "Medium",
+    "hint": "Doppler effect is used.",
+    "explanation": "The star moves slightly due to gravitational pull from the planet, which causes measurable Doppler shifts in its spectrum."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "Kepler’s Third Law relates which two quantities?",
+    "options": ["Star mass and planet radius", "Orbital period and semi-major axis", "Planet mass and distance", "Star luminosity and temperature"],
+    "answer": "Orbital period and semi-major axis",
+    "difficulty": "Medium",
+    "hint": "P² = a³ for solar mass stars.",
+    "explanation": "Kepler’s Third Law states that the square of the orbital period is proportional to the cube of the semi-major axis."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "Which planet type is most likely to be detected using transit photometry?",
+    "options": ["Large close-in planets", "Small distant planets", "Small close-in planets", "Gas giants far from star"],
+    "answer": "Large close-in planets",
+    "difficulty": "Easy",
+    "hint": "Biggest effect on brightness.",
+    "explanation": "Large planets close to their stars block more light, making transits easier to detect."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "Which detection method measures a star’s position changes in the sky due to orbiting planets?",
+    "options": ["Radial velocity", "Transit photometry", "Astrometry", "Gravitational microlensing"],
+    "answer": "Astrometry",
+    "difficulty": "Medium",
+    "hint": "Precise positional shifts.",
+    "explanation": "Astrometry measures tiny shifts in a star's position caused by gravitational pull of planets."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "Gravitational microlensing detects exoplanets by?",
+    "options": ["Measuring star wobble", "Observing brightness amplification of background star", "Transit dips", "Direct imaging"],
+    "answer": "Observing brightness amplification of background star",
+    "difficulty": "Hard",
+    "hint": "A lensing effect due to gravity.",
+    "explanation": "A planet’s gravity bends light from a background star, temporarily brightening it."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "What defines a planet as 'Earth-like'?",
+    "options": ["Size and composition similar to Earth", "Orbiting far from star", "Gas giant composition", "No atmosphere"],
+    "answer": "Size and composition similar to Earth",
+    "difficulty": "Easy",
+    "hint": "Consider rocky planets.",
+    "explanation": "Earth-like planets are rocky, with sizes and masses similar to Earth."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "Which exoplanet was the first discovered around a Sun-like star?",
+    "options": ["51 Pegasi b", "Kepler-22b", "HD 209458 b", "Proxima Centauri b"],
+    "answer": "51 Pegasi b",
+    "difficulty": "Medium",
+    "hint": "Discovered in 1995.",
+    "explanation": "51 Pegasi b was the first exoplanet found orbiting a main-sequence star using radial velocity."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "Which characteristic is common for a 'super-Earth' planet?",
+    "options": ["Mass between Earth and Neptune", "Smaller than Mercury", "Gas giant composition", "Orbiting multiple stars"],
+    "answer": "Mass between Earth and Neptune",
+    "difficulty": "Medium",
+    "hint": "Not a gas giant, bigger than Earth.",
+    "explanation": "Super-Earths have masses higher than Earth but less than Neptune, usually rocky."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "A planet with high eccentricity has what kind of orbit?",
+    "options": ["Circular", "Elliptical", "Parabolic", "Hyperbolic"],
+    "answer": "Elliptical",
+    "difficulty": "Medium",
+    "hint": "Distance varies along the orbit.",
+    "explanation": "Eccentric orbits are elongated (elliptical) rather than circular."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "Which type of planet is more likely to have a hydrogen-rich atmosphere?",
+    "options": ["Gas giants", "Rocky planets", "Ice dwarfs", "Terrestrial planets"],
+    "answer": "Gas giants",
+    "difficulty": "Easy",
+    "hint": "Think Jupiter and Saturn.",
+    "explanation": "Gas giants primarily consist of hydrogen and helium with thick atmospheres."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "What is the habitable zone?",
+    "options": ["Region where liquid water can exist", "Distance where planets are gas giants", "Region with strong stellar winds", "Region with no gravity"],
+    "answer": "Region where liquid water can exist",
+    "difficulty": "Easy",
+    "hint": "Also called the 'Goldilocks zone.'",
+    "explanation": "The habitable zone is the orbital region around a star where temperatures allow liquid water to exist on a planet's surface."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "Which property is measured in radial velocity method?",
+    "options": ["Star velocity along line of sight", "Distance to planet", "Planet radius", "Transit duration"],
+    "answer": "Star velocity along line of sight",
+    "difficulty": "Medium",
+    "hint": "Uses Doppler shifts.",
+    "explanation": "The radial velocity method detects the star's motion toward or away from Earth due to a planet's gravity."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "Which property primarily determines a planet's surface temperature?",
+    "options": ["Distance from star", "Mass", "Rotation speed", "Orbit shape"],
+    "answer": "Distance from star",
+    "difficulty": "Easy",
+    "hint": "Closer means hotter.",
+    "explanation": "The planet's surface temperature depends mainly on its distance from the host star."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "A planet transiting its star causes what in the observed light curve?",
+    "options": ["Increase in brightness", "Decrease in brightness", "No change", "Oscillations"],
+    "answer": "Decrease in brightness",
+    "difficulty": "Easy",
+    "hint": "Blockage of starlight.",
+    "explanation": "During a transit, the planet blocks a fraction of light, causing a dip in the light curve."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "Which of the following is a method to find exoplanets indirectly?",
+    "options": ["Direct imaging", "Transit photometry", "Space telescope imaging", "Stellar photography"],
+    "answer": "Transit photometry",
+    "difficulty": "Medium",
+    "hint": "Detect planets by their effect on the star.",
+    "explanation": "Transit photometry detects planets by the light dimming they cause when passing in front of the star."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "Which is true for planets in multi-star systems?",
+    "options": ["All have circular orbits", "Orbits can be stable or unstable", "Cannot exist", "All are gas giants"],
+    "answer": "Orbits can be stable or unstable",
+    "difficulty": "Hard",
+    "hint": "Gravitational interactions matter.",
+    "explanation": "Planets in multi-star systems may have stable or unstable orbits depending on stellar distances and configurations."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "Which planet type can be found in both inner and outer planetary systems?",
+    "options": ["Terrestrial planets", "Gas giants", "Brown dwarfs", "Hot Jupiters"],
+    "answer": "Terrestrial planets",
+    "difficulty": "Medium",
+    "hint": "Rocky planets can be close or far.",
+    "explanation": "Terrestrial planets are rocky and may exist close or moderately far from their stars."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Exoplanets & Planetary Systems",
+    "question": "The discovery of exoplanets has shown that planetary systems are?",
+    "options": ["All like our solar system", "Highly varied", "All have hot Jupiters", "Only terrestrial planets"],
+    "answer": "Highly varied",
+    "difficulty": "Medium",
+    "hint": "Different from early expectations.",
+    "explanation": "Exoplanet discoveries show planetary systems can have a wide range of planet types and orbital configurations."
+  }
+]
+[
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "What is the primary factor that determines a star's life cycle?",
+    "options": ["Initial mass", "Rotation speed", "Chemical composition", "Age"],
+    "answer": "Initial mass",
+    "difficulty": "Easy",
+    "hint": "Mass at birth dictates its future.",
+    "explanation": "A star's initial mass determines its luminosity, lifespan, and final state (white dwarf, neutron star, or black hole)."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "A protostar generates energy mainly through?",
+    "options": ["Hydrogen fusion", "Gravitational collapse", "Lithium burning", "Nuclear fission"],
+    "answer": "Gravitational collapse",
+    "difficulty": "Easy",
+    "hint": "Fusion hasn’t started yet.",
+    "explanation": "Before nuclear fusion, a protostar radiates energy from the conversion of gravitational potential energy into heat."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "Main sequence stars primarily fuse which element?",
+    "options": ["Hydrogen", "Helium", "Carbon", "Oxygen"],
+    "answer": "Hydrogen",
+    "difficulty": "Easy",
+    "hint": "Most of a star’s life is spent in this phase.",
+    "explanation": "Main sequence stars fuse hydrogen into helium in their cores to generate energy."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "What stage comes after a red giant for a low-mass star?",
+    "options": ["White dwarf", "Neutron star", "Black hole", "Protostar"],
+    "answer": "White dwarf",
+    "difficulty": "Medium",
+    "hint": "Star sheds outer layers, leaving a dense core.",
+    "explanation": "Low-mass stars expel their outer layers as planetary nebulae and leave behind a white dwarf."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "High-mass stars end their life as?",
+    "options": ["White dwarfs", "Neutron stars or black holes", "Protostars", "Red dwarfs"],
+    "answer": "Neutron stars or black holes",
+    "difficulty": "Medium",
+    "hint": "Depends on how massive the core is.",
+    "explanation": "Stars with initial mass >8 M☉ may form neutron stars or black holes after a supernova."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "What causes a supernova?",
+    "options": ["Core collapse of massive star", "Ignition of hydrogen fusion", "Formation of planetary nebula", "Stellar rotation"],
+    "answer": "Core collapse of massive star",
+    "difficulty": "Medium",
+    "hint": "Explosion from core instability.",
+    "explanation": "A supernova occurs when the core of a massive star collapses under gravity, causing a powerful explosion."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "During the red giant phase, what happens to the star's core?",
+    "options": ["It shrinks and heats up", "It expands and cools", "It becomes gaseous", "It remains the same"],
+    "answer": "It shrinks and heats up",
+    "difficulty": "Medium",
+    "hint": "Core contracts while outer layers expand.",
+    "explanation": "The core contracts and heats, while the outer layers expand and cool, giving the star a red appearance."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "Which phase is characterized by helium fusion into carbon?",
+    "options": ["Main sequence", "Red giant", "Supernova", "White dwarf"],
+    "answer": "Red giant",
+    "difficulty": "Medium",
+    "hint": "Fusion after hydrogen is depleted.",
+    "explanation": "In the red giant phase, the star fuses helium into carbon and oxygen in the core."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "What is the Chandrasekhar limit?",
+    "options": ["Maximum mass of a white dwarf", "Minimum mass of a neutron star", "Maximum mass of a star", "Mass of Sun"],
+    "answer": "Maximum mass of a white dwarf",
+    "difficulty": "Hard",
+    "hint": "Approximately 1.44 M☉.",
+    "explanation": "The Chandrasekhar limit (~1.44 M☉) is the maximum mass a white dwarf can have before collapsing into a neutron star."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "What is a planetary nebula?",
+    "options": ["Ejected outer layers of a star", "A small planet forming", "A black hole", "A red dwarf"],
+    "answer": "Ejected outer layers of a star",
+    "difficulty": "Easy",
+    "hint": "Not related to planets despite the name.",
+    "explanation": "Planetary nebulae are shells of gas ejected by low- to intermediate-mass stars near the end of their lives."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "Which stars have the longest lifetimes?",
+    "options": ["Red dwarfs", "Blue giants", "Sun-like stars", "White dwarfs"],
+    "answer": "Red dwarfs",
+    "difficulty": "Easy",
+    "hint": "Small and cool stars burn fuel slowly.",
+    "explanation": "Red dwarfs burn hydrogen slowly and can live for hundreds of billions of years."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "What is a neutron star primarily composed of?",
+    "options": ["Neutrons", "Protons", "Electrons", "Hydrogen"],
+    "answer": "Neutrons",
+    "difficulty": "Medium",
+    "hint": "Densest stable matter.",
+    "explanation": "Neutron stars are extremely dense objects mainly composed of neutrons formed after supernova collapse."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "What is the approximate temperature of the core of the Sun where fusion occurs?",
+    "options": ["15 million K", "5,800 K", "1 million K", "100 million K"],
+    "answer": "15 million K",
+    "difficulty": "Medium",
+    "hint": "Much hotter than the surface.",
+    "explanation": "The core of the Sun reaches ~15 million K, allowing hydrogen fusion to occur."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "Which process converts helium into carbon and oxygen in stars?",
+    "options": ["Triple-alpha process", "Proton-proton chain", "CNO cycle", "Beta decay"],
+    "answer": "Triple-alpha process",
+    "difficulty": "Hard",
+    "hint": "Helium fusion in red giants.",
+    "explanation": "The triple-alpha process fuses three helium nuclei into carbon, with some forming oxygen."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "Which factor affects how fast a star evolves off the main sequence?",
+    "options": ["Mass", "Color", "Distance from Earth", "Rotation"],
+    "answer": "Mass",
+    "difficulty": "Medium",
+    "hint": "Bigger stars burn fuel faster.",
+    "explanation": "Higher-mass stars have shorter lifetimes because they burn fuel at higher rates."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "What is the primary source of energy in a white dwarf?",
+    "options": ["Residual heat", "Nuclear fusion", "Gravitational collapse", "Chemical reactions"],
+    "answer": "Residual heat",
+    "difficulty": "Medium",
+    "hint": "Fusion has stopped.",
+    "explanation": "White dwarfs no longer fuse elements; they shine due to residual thermal energy."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "What is a black hole?",
+    "options": ["An object with gravity so strong not even light can escape", "A dark star", "A neutron star", "A red giant"],
+    "answer": "An object with gravity so strong not even light can escape",
+    "difficulty": "Medium",
+    "hint": "Event horizon concept.",
+    "explanation": "A black hole is a region of spacetime with gravity strong enough to prevent light from escaping."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "Which phase occurs after helium is exhausted in massive stars?",
+    "options": ["Carbon fusion", "Hydrogen burning", "Red giant", "White dwarf"],
+    "answer": "Carbon fusion",
+    "difficulty": "Hard",
+    "hint": "Next stage of fusion in massive stars.",
+    "explanation": "Massive stars fuse heavier elements sequentially: helium → carbon → oxygen → silicon until iron accumulates in the core."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "Stellar Evolution",
+    "question": "Which force balances gravity in a main sequence star?",
+    "options": ["Radiation pressure from fusion", "Magnetic pressure", "Centrifugal force", "Dark energy"],
+    "answer": "Radiation pressure from fusion",
+    "difficulty": "Medium",
+    "hint": "Prevents collapse during life.",
+    "explanation": "The outward pressure from nuclear fusion balances gravity, keeping the star stable on the main sequence."
+  }
+]
+[
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "What are the two axes of the Hertzsprung-Russell diagram?",
+    "options": ["Luminosity vs Temperature", "Mass vs Radius", "Distance vs Brightness", "Velocity vs Age"],
+    "answer": "Luminosity vs Temperature",
+    "difficulty": "Easy",
+    "hint": "Think of brightness and heat.",
+    "explanation": "The H-R diagram plots stellar luminosity (or absolute magnitude) on the vertical axis and surface temperature (or spectral type) on the horizontal axis."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "Which spectral class represents the hottest stars?",
+    "options": ["O", "B", "A", "M"],
+    "answer": "O",
+    "difficulty": "Easy",
+    "hint": "Remember OBAFGKM.",
+    "explanation": "O-type stars are the hottest and most massive stars, with blue color."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "Which spectral class represents cool, red stars?",
+    "options": ["M", "F", "G", "B"],
+    "answer": "M",
+    "difficulty": "Easy",
+    "hint": "Coolest in the OBAFGKM sequence.",
+    "explanation": "M-type stars are the coolest, red in color, often red dwarfs or red giants."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "A star in the upper-left of the H-R diagram is likely:",
+    "options": ["Hot and luminous", "Cool and dim", "Hot and dim", "Cool and luminous"],
+    "answer": "Hot and luminous",
+    "difficulty": "Medium",
+    "hint": "Top-left means high luminosity and high temperature.",
+    "explanation": "Upper-left stars are massive, bright, and hot, often O or B type giants or supergiants."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "Main sequence stars are located along which region of the H-R diagram?",
+    "options": ["Diagonal from top-left to bottom-right", "Top-right corner", "Bottom-left corner", "Center only"],
+    "answer": "Diagonal from top-left to bottom-right",
+    "difficulty": "Medium",
+    "hint": "Most stars lie here during their hydrogen-burning phase.",
+    "explanation": "The main sequence runs diagonally from hot, luminous stars to cool, dim stars."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "Which type of star appears in the lower-left region of the H-R diagram?",
+    "options": ["White dwarfs", "Red giants", "Supergiants", "Protostars"],
+    "answer": "White dwarfs",
+    "difficulty": "Medium",
+    "hint": "Hot but low luminosity.",
+    "explanation": "White dwarfs are small, hot, and dim, located in the lower-left of the H-R diagram."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "The Sun belongs to which spectral type?",
+    "options": ["G", "K", "F", "M"],
+    "answer": "G",
+    "difficulty": "Easy",
+    "hint": "Yellow main-sequence star.",
+    "explanation": "The Sun is a G-type main-sequence star (G2V), moderately hot and luminous."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "Which stellar property is most closely related to a star’s color?",
+    "options": ["Surface temperature", "Mass", "Age", "Luminosity"],
+    "answer": "Surface temperature",
+    "difficulty": "Easy",
+    "hint": "Blue vs red color.",
+    "explanation": "Star color indicates surface temperature: blue = hot, red = cool."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "What does a star’s luminosity measure?",
+    "options": ["Total energy output per second", "Size of the core", "Mass", "Distance from Earth"],
+    "answer": "Total energy output per second",
+    "difficulty": "Easy",
+    "hint": "Brightness intrinsic to the star.",
+    "explanation": "Luminosity is the total energy a star emits per unit time."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "Which class of stars is more luminous than main sequence stars of the same temperature?",
+    "options": ["Giants", "White dwarfs", "Red dwarfs", "Protostars"],
+    "answer": "Giants",
+    "difficulty": "Medium",
+    "hint": "They have expanded outer layers.",
+    "explanation": "Giant stars have large radii and therefore higher luminosity at similar temperatures."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "Which class of stars is less luminous than main sequence stars of the same temperature?",
+    "options": ["White dwarfs", "Red giants", "Supergiants", "Blue giants"],
+    "answer": "White dwarfs",
+    "difficulty": "Medium",
+    "hint": "Small but hot stars.",
+    "explanation": "White dwarfs are hot but small, giving them low luminosity."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "What is the spectral sequence from hottest to coolest stars?",
+    "options": ["O, B, A, F, G, K, M", "M, K, G, F, A, B, O", "G, K, M, O, B, A, F", "A, B, O, M, K, G, F"],
+    "answer": "O, B, A, F, G, K, M",
+    "difficulty": "Easy",
+    "hint": "Mnemonic: Oh Be A Fine Girl/Guy, Kiss Me",
+    "explanation": "OBAFGKM is the standard spectral classification from hottest to coolest."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "What property primarily determines a star's position along the main sequence?",
+    "options": ["Mass", "Age", "Rotation", "Metallicity"],
+    "answer": "Mass",
+    "difficulty": "Medium",
+    "hint": "More massive stars are hotter and brighter.",
+    "explanation": "Mass dictates temperature and luminosity, determining a star's main sequence position."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "A star that moves off the main sequence becomes a:",
+    "options": ["Giant or supergiant", "White dwarf", "Protostar", "Neutron star"],
+    "answer": "Giant or supergiant",
+    "difficulty": "Medium",
+    "hint": "Hydrogen burning in the core has ended.",
+    "explanation": "Stars expand into giants or supergiants after exhausting core hydrogen."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "Which type of star appears in the top-right corner of the H-R diagram?",
+    "options": ["Red supergiants", "Blue dwarfs", "White dwarfs", "Protostars"],
+    "answer": "Red supergiants",
+    "difficulty": "Medium",
+    "hint": "Cool but very luminous.",
+    "explanation": "Top-right stars are large, cool, and very luminous, like red supergiants."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "What does the absolute magnitude of a star represent?",
+    "options": ["Intrinsic brightness", "Apparent brightness", "Temperature", "Distance"],
+    "answer": "Intrinsic brightness",
+    "difficulty": "Easy",
+    "hint": "Brightness if all stars were 10 parsecs away.",
+    "explanation": "Absolute magnitude measures a star’s intrinsic brightness independent of distance."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "Stars cooler than 3,500 K are usually of which color?",
+    "options": ["Red", "Yellow", "White", "Blue"],
+    "answer": "Red",
+    "difficulty": "Easy",
+    "hint": "Red dwarfs and giants.",
+    "explanation": "Cool stars emit most energy in red wavelengths, appearing red."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "Which property is NOT shown on a standard H-R diagram?",
+    "options": ["Distance", "Luminosity", "Temperature", "Spectral type"],
+    "answer": "Distance",
+    "difficulty": "Easy",
+    "hint": "H-R diagrams are intrinsic properties only.",
+    "explanation": "H-R diagrams plot intrinsic stellar properties; distance to the star is not shown."
+  },
+  {
+    "event": "Astronomy",
+    "topic": "H-R Diagram & Stellar Classification",
+    "question": "What happens to a star’s luminosity as it evolves into a red giant?",
+    "options": ["Increases", "Decreases", "Remains the same", "Becomes zero"],
+    "answer": "Increases",
+    "difficulty": "Medium",
+    "hint": "Outer layers expand and brighten.",
+    "explanation": "As a star expands into a red giant, its luminosity increases even though surface temperature decreases."
+  }
+]
+[
+  {
+    "event": "Astronomy",
+    "question": "Which method detects exoplanets by observing periodic dimming of a star's light?",
+    "options": ["Transit method", "Radial velocity", "Direct imaging", "Astrometry"],
+    "answer": "Transit method",
     "subtopic": "Exoplanet Detection",
-    "difficulty": "Hard",
-    "hint": "The ratio of the planet's area to the star's area is directly related to the observed change in brightness.",
-    "explanation": "The transit method for exoplanet detection involves measuring the slight dip in a star's brightness as a planet passes in front of it. The amount of light blocked (the transit depth) is proportional to the square of the ratio of the planet's radius to the star's radius. By knowing the star's radius, one can estimate the radius of the planet."
-  },
-  {
-    "event": "Astronomy",
-    "question": "Which type of galaxy has no defined shape and is often irregular in appearance?",
-    "options": [
-      "Spiral",
-      "Elliptical",
-      "Irregular",
-      "Lenticular"
-    ],
-    "answer": "Irregular",
-    "subtopic": "Galaxies",
     "difficulty": "Easy",
-    "hint": "It does not have a spiral or elliptical shape.",
-    "explanation": "Irregular galaxies do not have a defined shape and often appear chaotic in structure."
+    "hint": "The star appears slightly dimmer when the planet passes in front of it.",
+    "explanation": "The transit method measures the dip in a star’s brightness caused by a planet crossing in front of it."
   },
   {
     "event": "Astronomy",
-    "question": "Which layer of the Sun is responsible for its visible light?",
-    "options": [
-      "Core",
-      "Radiative zone",
-      "Photosphere",
-      "Chromosphere"
-    ],
-    "answer": "Photosphere",
-    "subtopic": "Solar Structure",
+    "question": "Which exoplanet type is similar in mass to Jupiter but orbits very close to its star?",
+    "options": ["Hot Jupiter", "Super-Earth", "Ice Giant", "Neptune-like"],
+    "answer": "Hot Jupiter",
+    "subtopic": "Exoplanet Classification",
     "difficulty": "Easy",
-    "hint": "This is the Sun's 'surface' we can see.",
-    "explanation": "The photosphere is the layer of the Sun from which most of its visible light is emitted."
+    "hint": "It is 'hot' because of its proximity to the star.",
+    "explanation": "Hot Jupiters are gas giants with short orbital periods, resulting in high surface temperatures."
   },
   {
     "event": "Astronomy",
-    "question": "Which type of variable star is used as a 'standard candle' for measuring cosmic distances?",
-    "options": [
-      "RR Lyrae",
-      "Cepheid",
-      "Mira",
-      "T Tauri"
-    ],
-    "answer": "Cepheid",
-    "subtopic": "Variable Stars",
+    "question": "What is the habitable zone around a star?",
+    "options": ["Region where liquid water can exist", "Region with highest solar radiation", "Area with gas giants", "Area with icy bodies"],
+    "answer": "Region where liquid water can exist",
+    "subtopic": "Planetary Habitability",
+    "difficulty": "Easy",
+    "hint": "It is sometimes called the 'Goldilocks zone'.",
+    "explanation": "The habitable zone is the distance range from a star where conditions allow liquid water on a planet’s surface."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which law relates a planet's orbital period to its distance from its star?",
+    "options": ["Kepler's Third Law", "Newton's Second Law", "Ohm's Law", "Hubble's Law"],
+    "answer": "Kepler's Third Law",
+    "subtopic": "Planetary Motion",
     "difficulty": "Medium",
-    "hint": "It has a well-defined period-luminosity relationship.",
-    "explanation": "Cepheid variable stars have a known relationship between their pulsation period and intrinsic luminosity, making them useful for measuring distances."
+    "hint": "P² ∝ a³",
+    "explanation": "Kepler's Third Law states that the square of a planet’s orbital period is proportional to the cube of the semi-major axis of its orbit."
   },
   {
     "event": "Astronomy",
-    "question": "What is the primary composition of Jupiter's atmosphere?",
-    "options": [
-      "Hydrogen and Helium",
-      "Oxygen and Nitrogen",
-      "Carbon Dioxide and Methane",
-      "Water Vapor and Ammonia"
-    ],
-    "answer": "Hydrogen and Helium",
-    "subtopic": "Planetary Science",
+    "question": "Which type of planet is primarily composed of gases like hydrogen and helium?",
+    "options": ["Gas giant", "Terrestrial planet", "Ice giant", "Dwarf planet"],
+    "answer": "Gas giant",
+    "subtopic": "Planetary Classification",
     "difficulty": "Easy",
-    "hint": "Think about the most abundant elements in gas giant planets.",
-    "explanation": "Jupiter is a gas giant composed mainly of hydrogen (~90%) and helium (~10%), with trace amounts of other gases."
+    "hint": "Examples include Jupiter and Saturn.",
+    "explanation": "Gas giants are large planets with thick atmospheres of hydrogen and helium and little solid surface."
   },
   {
     "event": "Astronomy",
-    "question": "Which of the following phenomena is responsible for auroras on Earth?",
-    "options": [
-      "Solar wind interacting with the magnetosphere",
-      "Earth's core rotation",
-      "Tidal forces from the Moon",
-      "Atmospheric greenhouse gases"
-    ],
-    "answer": "Solar wind interacting with the magnetosphere",
-    "subtopic": "Space Weather",
+    "question": "What is the primary source of heat for a planet like Venus?",
+    "options": ["Greenhouse effect", "Radioactive decay", "Tidal heating", "Solar wind"],
+    "answer": "Greenhouse effect",
+    "subtopic": "Planetary Atmospheres",
     "difficulty": "Easy",
-    "hint": "Particles from the Sun collide with Earth's magnetic field.",
-    "explanation": "Auroras occur when charged particles from the solar wind interact with Earth's magnetic field and atmosphere, producing visible light near the poles."
+    "hint": "Think about CO2 trapping heat.",
+    "explanation": "Venus is extremely hot due to a thick CO2 atmosphere trapping solar heat, producing a strong greenhouse effect."
   },
   {
     "event": "Astronomy",
-    "question": "What type of star ends its life as a white dwarf?",
-    "options": [
-      "Massive stars > 20 solar masses",
-      "Intermediate stars ~1–8 solar masses",
-      "Protostars",
-      "Brown dwarfs"
-    ],
-    "answer": "Intermediate stars ~1–8 solar masses",
-    "subtopic": "Stellar Evolution",
-    "difficulty": "Medium",
-    "hint": "Not the heaviest stars, not the smallest either.",
-    "explanation": "Stars with initial masses between about 1 and 8 solar masses expel their outer layers as planetary nebulae and leave behind a dense white dwarf core."
-  },
-  {
-    "event": "Astronomy",
-    "question": "Which of these is considered a small Solar System body?",
-    "options": [
-      "Moon",
-      "Asteroid",
-      "Jupiter",
-      "Sun"
-    ],
-    "answer": "Asteroid",
+    "question": "Which planet has the fastest orbital period around the Sun?",
+    "options": ["Mercury", "Earth", "Venus", "Mars"],
+    "answer": "Mercury",
     "subtopic": "Solar System",
     "difficulty": "Easy",
-    "hint": "It's neither a planet nor a moon.",
-    "explanation": "Asteroids are small rocky bodies orbiting the Sun, distinct from planets and moons."
+    "hint": "It is the closest planet to the Sun.",
+    "explanation": "Mercury completes an orbit in about 88 Earth days due to its proximity to the Sun."
   },
   {
     "event": "Astronomy",
-    "question": "What type of radiation do neutron stars emit most prominently?",
-    "options": [
-      "Visible light",
-      "Gamma rays and X-rays",
-      "Infrared",
-      "Radio waves"
-    ],
-    "answer": "Gamma rays and X-rays",
-    "subtopic": "Compact Objects",
-    "difficulty": "Medium",
-    "hint": "They are extremely dense and hot, emitting high-energy radiation.",
-    "explanation": "Neutron stars are compact objects with strong magnetic fields; they emit high-energy gamma rays and X-rays due to their extreme temperatures and magnetic activity."
-  },
-  {
-    "event": "Astronomy",
-    "question": "Which planet has the longest day in the Solar System?",
-    "options": [
-      "Mercury",
-      "Venus",
-      "Earth",
-      "Mars"
-    ],
-    "answer": "Venus",
-    "subtopic": "Planetary Science",
-    "difficulty": "Easy",
-    "hint": "Its rotation is extremely slow and retrograde.",
-    "explanation": "Venus has a very slow retrograde rotation, taking about 243 Earth days to complete one rotation, making its day longer than its year."
-  },
-  {
-    "event": "Astronomy",
-    "question": "What is the main reason for the seasons on Earth?",
-    "options": [
-      "Variation in Earth's distance from the Sun",
-      "Tilt of Earth's axis",
-      "Changes in Sun's luminosity",
-      "Earth's rotation speed"
-    ],
-    "answer": "Tilt of Earth's axis",
-    "subtopic": "Earth Science",
-    "difficulty": "Easy",
-    "hint": "It affects sunlight angle and day length.",
-    "explanation": "The tilt of Earth's axis (~23.5°) causes different hemispheres to receive varying sunlight throughout the year, resulting in seasons."
-  },
-  {
-    "event": "Astronomy",
-    "question": "Which of the following is a method to detect exoplanets using starlight?",
-    "options": [
-      "Transit method",
-      "Spectroscopy",
-      "Direct imaging",
-      "All of the above"
-    ],
-    "answer": "All of the above",
+    "question": "Which exoplanet detection method measures the star's wobble?",
+    "options": ["Radial velocity", "Transit", "Direct imaging", "Gravitational microlensing"],
+    "answer": "Radial velocity",
     "subtopic": "Exoplanet Detection",
     "difficulty": "Medium",
-    "hint": "Different techniques can be used to infer the presence of a planet.",
-    "explanation": "Exoplanets can be detected using the transit method (dimming of light), spectroscopy (radial velocity), or direct imaging with advanced telescopes."
+    "hint": "It uses the Doppler effect.",
+    "explanation": "The radial velocity method detects variations in the star's spectral lines caused by gravitational pull from orbiting planets."
   },
   {
     "event": "Astronomy",
-    "question": "What is the Chandrasekhar limit?",
-    "options": [
-      "Maximum mass of a neutron star",
-      "Maximum mass of a white dwarf",
-      "Minimum mass of a star",
-      "Mass of the Sun"
-    ],
-    "answer": "Maximum mass of a white dwarf",
-    "subtopic": "Stellar Evolution",
+    "question": "Which planet in our Solar System has retrograde rotation?",
+    "options": ["Venus", "Mars", "Earth", "Jupiter"],
+    "answer": "Venus",
+    "subtopic": "Planetary Properties",
+    "difficulty": "Medium",
+    "hint": "Its rotation is opposite to most planets.",
+    "explanation": "Venus rotates clockwise, opposite to most other planets, resulting in retrograde rotation."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which type of exoplanet has a mass between Earth and Neptune?",
+    "options": ["Super-Earth", "Hot Jupiter", "Brown Dwarf", "Gas Giant"],
+    "answer": "Super-Earth",
+    "subtopic": "Exoplanet Classification",
+    "difficulty": "Medium",
+    "hint": "Heavier than Earth, lighter than Neptune.",
+    "explanation": "Super-Earths are exoplanets with a mass larger than Earth's but significantly less than Neptune's."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which exoplanet detection method uses the bending of light by gravity?",
+    "options": ["Gravitational microlensing", "Transit method", "Radial velocity", "Direct imaging"],
+    "answer": "Gravitational microlensing",
+    "subtopic": "Exoplanet Detection",
     "difficulty": "Hard",
-    "hint": "Above this limit, a white dwarf cannot remain stable.",
-    "explanation": "The Chandrasekhar limit (~1.44 solar masses) is the maximum mass a white dwarf can have before collapsing into a neutron star or black hole."
+    "hint": "Einstein's theory of general relativity.",
+    "explanation": "Gravitational microlensing detects exoplanets when a foreground star bends light from a background star, temporarily magnifying it."
   },
   {
     "event": "Astronomy",
-    "question": "Which planet in the Solar System has the strongest magnetic field?",
-    "options": [
-      "Earth",
-      "Jupiter",
-      "Saturn",
-      "Neptune"
-    ],
+    "question": "Which planet has the largest known moon in the Solar System?",
+    "options": ["Jupiter", "Saturn", "Earth", "Neptune"],
     "answer": "Jupiter",
-    "subtopic": "Planetary Science",
+    "subtopic": "Moons & Satellites",
     "difficulty": "Medium",
-    "hint": "It is the largest planet in the Solar System.",
-    "explanation": "Jupiter has the strongest planetary magnetic field due to its rapid rotation and metallic hydrogen interior, which generates a powerful dynamo effect."
+    "hint": "Think of Ganymede.",
+    "explanation": "Ganymede, orbiting Jupiter, is the largest moon in the Solar System."
   },
   {
     "event": "Astronomy",
-    "question": "Which phenomenon is observed when a massive object bends the light of a background star?",
-    "options": [
-      "Doppler effect",
-      "Gravitational lensing",
-      "Redshift",
-      "Aurora"
-    ],
-    "answer": "Gravitational lensing",
-    "subtopic": "Astrophysics",
+    "question": "Which dwarf planet is located in the Kuiper Belt?",
+    "options": ["Pluto", "Ceres", "Eris", "Haumea"],
+    "answer": "Pluto",
+    "subtopic": "Solar System Objects",
     "difficulty": "Medium",
-    "hint": "It’s predicted by Einstein’s General Theory of Relativity.",
-    "explanation": "Gravitational lensing occurs when the gravity of a massive object, like a galaxy cluster, bends the light from objects behind it, creating magnified or distorted images."
+    "hint": "Once considered the ninth planet.",
+    "explanation": "Pluto is a dwarf planet located in the Kuiper Belt beyond Neptune."
   },
   {
     "event": "Astronomy",
-    "question": "Which of the following best describes a pulsar?",
-    "options": [
-      "Rapidly rotating neutron star emitting regular pulses of radiation",
-      "A white dwarf undergoing fusion",
-      "A black hole emitting X-rays",
-      "A supernova remnant"
-    ],
-    "answer": "Rapidly rotating neutron star emitting regular pulses of radiation",
-    "subtopic": "Compact Objects",
+    "question": "Which planets have rings in the Solar System?",
+    "options": ["Saturn, Jupiter, Uranus, Neptune", "Earth, Mars, Jupiter", "Venus, Mercury", "All planets"],
+    "answer": "Saturn, Jupiter, Uranus, Neptune",
+    "subtopic": "Planetary Features",
     "difficulty": "Medium",
-    "hint": "Its pulse is extremely regular and detectable from Earth.",
-    "explanation": "Pulsars are rotating neutron stars that emit beams of radiation from their magnetic poles; these beams sweep past Earth as pulses of light or radio waves."
+    "hint": "Look beyond Saturn.",
+    "explanation": "Four gas giants have ring systems, though Saturn's are the most prominent."
   },
   {
     "event": "Astronomy",
-    "question": "What is the primary cause of solar flares?",
-    "options": [
-      "Nuclear fusion in the Sun's core",
-      "Magnetic reconnection in the Sun's atmosphere",
-      "Rotation of the Sun",
-      "Earth’s gravitational pull"
-    ],
-    "answer": "Magnetic reconnection in the Sun's atmosphere",
-    "subtopic": "Solar Activity",
+    "question": "Which planet is considered an ice giant?",
+    "options": ["Neptune", "Jupiter", "Mars", "Venus"],
+    "answer": "Neptune",
+    "subtopic": "Planetary Classification",
     "difficulty": "Medium",
-    "hint": "It involves the sudden release of magnetic energy.",
-    "explanation": "Solar flares occur when magnetic energy stored in the Sun’s atmosphere is suddenly released, accelerating particles and emitting intense radiation."
+    "hint": "It has a thick layer of water, ammonia, and methane ices.",
+    "explanation": "Ice giants like Neptune have heavier volatile substances (ices) in their composition compared to gas giants."
   },
   {
     "event": "Astronomy",
-    "question": "Which type of galaxy contains mostly old stars and little gas or dust?",
-    "options": [
-      "Elliptical",
-      "Spiral",
-      "Irregular",
-      "Lenticular"
-    ],
-    "answer": "Elliptical",
-    "subtopic": "Galaxies",
+    "question": "Which exoplanet was the first confirmed discovery around a Sun-like star?",
+    "options": ["51 Pegasi b", "Kepler-22b", "Proxima Centauri b", "Gliese 581g"],
+    "answer": "51 Pegasi b",
+    "subtopic": "Historical Discoveries",
     "difficulty": "Medium",
-    "hint": "They often appear reddish due to old stars.",
-    "explanation": "Elliptical galaxies have little ongoing star formation and are dominated by older, red stars, with minimal gas and dust."
+    "hint": "Discovered in 1995.",
+    "explanation": "51 Pegasi b was discovered in 1995 using the radial velocity method and was the first exoplanet around a main-sequence star."
   },
   {
     "event": "Astronomy",
-    "question": "Which of the following is true about black holes?",
-    "options": [
-      "Nothing can escape beyond the event horizon",
-      "They emit visible light from the core",
-      "They have solid surfaces",
-      "They are the same as neutron stars"
-    ],
-    "answer": "Nothing can escape beyond the event horizon",
-    "subtopic": "Compact Objects",
-    "difficulty": "Medium",
-    "hint": "Consider the escape velocity at the event horizon.",
-    "explanation": "Black holes have an event horizon beyond which nothing, not even light, can escape. They are not solid and differ from neutron stars."
-  },
-  {
-    "event": "Astronomy",
-    "question": "Which law describes the relationship between a planet’s orbital period and its distance from the Sun?",
-    "options": [
-      "Kepler’s Third Law",
-      "Newton’s First Law",
-      "Kepler’s First Law",
-      "Newton’s Law of Gravitation"
-    ],
-    "answer": "Kepler’s Third Law",
-    "subtopic": "Celestial Mechanics",
+    "question": "Which factor primarily determines a planet's surface temperature?",
+    "options": ["Distance from its star", "Mass", "Rotation period", "Magnetic field"],
+    "answer": "Distance from its star",
+    "subtopic": "Planetary Properties",
     "difficulty": "Easy",
-    "hint": "It involves the square of the period proportional to the cube of the semi-major axis.",
-    "explanation": "Kepler’s Third Law states that the square of a planet’s orbital period is proportional to the cube of its average distance from the Sun."
+    "hint": "Closer planets receive more sunlight.",
+    "explanation": "A planet’s surface temperature depends mainly on how much stellar radiation it receives."
   },
   {
     "event": "Astronomy",
-    "question": "Which of these is NOT considered part of the Milky Way galaxy’s structure?",
-    "options": [
-      "Galactic disk",
-      "Galactic halo",
-      "Spiral arms",
-      "Oort Cloud"
-    ],
-    "answer": "Oort Cloud",
-    "subtopic": "Galaxies",
+    "question": "Which planet has the largest axial tilt?",
+    "options": ["Uranus", "Earth", "Mars", "Saturn"],
+    "answer": "Uranus",
+    "subtopic": "Planetary Properties",
     "difficulty": "Medium",
-    "hint": "It lies far outside the main components of the galaxy.",
-    "explanation": "The Oort Cloud is a distant spherical shell of icy bodies surrounding the Solar System, not part of the galaxy’s main structure."
+    "hint": "Its rotation axis is almost horizontal.",
+    "explanation": "Uranus has an axial tilt of ~98°, causing extreme seasonal changes."
   },
   {
     "event": "Astronomy",
-    "question": "What type of supernova results from the collapse of a massive star’s core?",
-    "options": [
-      "Type Ia",
-      "Type II",
-      "Type Ib",
-      "Nova"
-    ],
-    "answer": "Type II",
-    "subtopic": "Stellar Evolution",
+    "question": "Which planet's atmosphere is mostly nitrogen?",
+    "options": ["Earth", "Venus", "Mars", "Jupiter"],
+    "answer": "Earth",
+    "subtopic": "Atmospheres",
+    "difficulty": "Easy",
+    "hint": "Think about our life-supporting planet.",
+    "explanation": "Earth’s atmosphere is about 78% nitrogen and 21% oxygen."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which process contributes to planetary differentiation?",
+    "options": ["Separation of layers by density", "Magnetic field generation", "Tidal heating", "Solar wind stripping"],
+    "answer": "Separation of layers by density",
+    "subtopic": "Planetary Formation",
     "difficulty": "Medium",
-    "hint": "It leaves behind a neutron star or black hole.",
-    "explanation": "Type II supernovae occur when a massive star exhausts its nuclear fuel, and its core collapses, producing a violent explosion."
+    "hint": "Heavy elements sink, light elements rise.",
+    "explanation": "Differentiation occurs when denser materials sink toward a planet’s center and lighter materials rise."
   },
   {
     "event": "Astronomy",
-    "question": "Which element is primarily produced during the triple-alpha process in stars?",
-    "options": [
-      "Hydrogen",
-      "Helium",
-      "Carbon",
-      "Oxygen"
-    ],
-    "answer": "Carbon",
-    "subtopic": "Stellar Nucleosynthesis",
+    "question": "Which planet is considered a 'Super-Earth' candidate in exoplanet studies?",
+    "options": ["Kepler-22b", "Jupiter", "Venus", "Mars"],
+    "answer": "Kepler-22b",
+    "subtopic": "Exoplanet Classification",
+    "difficulty": "Medium",
+    "hint": "Larger than Earth, possibly habitable.",
+    "explanation": "Kepler-22b is an exoplanet larger than Earth, located in its star’s habitable zone, making it a Super-Earth candidate."
+  }
+]
+[
+  {
+    "event": "Astronomy",
+    "question": "What is the defining feature of a black hole?",
+    "options": ["Escape velocity greater than the speed of light", "High luminosity", "Rapid rotation", "Strong magnetic field"],
+    "answer": "Escape velocity greater than the speed of light",
+    "subtopic": "Black Hole Basics",
+    "difficulty": "Easy",
+    "hint": "Nothing, not even light, can escape.",
+    "explanation": "A black hole is an object with a gravitational pull so strong that its escape velocity exceeds the speed of light."
+  },
+  {
+    "event": "Astronomy",
+    "question": "What is the boundary surrounding a black hole called?",
+    "options": ["Event horizon", "Singularity", "Accretion disk", "Photon sphere"],
+    "answer": "Event horizon",
+    "subtopic": "Black Hole Structure",
+    "difficulty": "Easy",
+    "hint": "Crossing it means you cannot return.",
+    "explanation": "The event horizon is the surface beyond which nothing can escape a black hole’s gravity."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which type of black hole forms from the collapse of a massive star?",
+    "options": ["Stellar-mass black hole", "Supermassive black hole", "Intermediate black hole", "Primordial black hole"],
+    "answer": "Stellar-mass black hole",
+    "subtopic": "Black Hole Formation",
+    "difficulty": "Easy",
+    "hint": "It is a result of supernova explosions.",
+    "explanation": "Stellar-mass black holes are formed when massive stars (>20 solar masses) undergo gravitational collapse after a supernova."
+  },
+  {
+    "event": "Astronomy",
+    "question": "What is the singularity of a black hole?",
+    "options": ["Point of infinite density", "Outer boundary", "Hot accretion disk", "Magnetic pole"],
+    "answer": "Point of infinite density",
+    "subtopic": "Black Hole Structure",
+    "difficulty": "Medium",
+    "hint": "All mass collapses into a single point.",
+    "explanation": "The singularity is the center of a black hole where gravity and density become infinite."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which black hole type is found at the center of most galaxies?",
+    "options": ["Supermassive black hole", "Stellar-mass black hole", "Intermediate black hole", "Primordial black hole"],
+    "answer": "Supermassive black hole",
+    "subtopic": "Black Hole Classification",
+    "difficulty": "Easy",
+    "hint": "Mass millions to billions of times that of the Sun.",
+    "explanation": "Supermassive black holes reside in galactic centers and can have millions to billions of solar masses."
+  },
+  {
+    "event": "Astronomy",
+    "question": "What is the primary method for detecting stellar-mass black holes?",
+    "options": ["Observing X-ray emission from accretion disks", "Direct imaging", "Gravitational lensing", "Pulsar timing"],
+    "answer": "Observing X-ray emission from accretion disks",
+    "subtopic": "Detection Methods",
+    "difficulty": "Medium",
+    "hint": "Material falling into the black hole emits high-energy radiation.",
+    "explanation": "Material heated in the accretion disk emits X-rays, revealing the presence of a black hole."
+  },
+  {
+    "event": "Astronomy",
+    "question": "What is Hawking radiation?",
+    "options": ["Thermal radiation predicted from black holes", "X-rays from accretion disks", "Radio waves from pulsars", "Cosmic microwave background"],
+    "answer": "Thermal radiation predicted from black holes",
+    "subtopic": "Black Hole Physics",
     "difficulty": "Hard",
-    "hint": "Three helium nuclei combine to form a heavier element.",
-    "explanation": "In the triple-alpha process, three helium nuclei (alpha particles) fuse to form carbon in the cores of red giant stars."
+    "hint": "It allows black holes to lose mass over time.",
+    "explanation": "Hawking radiation is quantum radiation that allows black holes to slowly evaporate."
   },
   {
     "event": "Astronomy",
-    "question": "What is the main difference between a Type Ia supernova and a Type II supernova?",
-    "options": [
-      "Type Ia originates from a white dwarf, Type II from a massive star",
-      "Type Ia produces neutron stars, Type II produces black holes",
-      "Type Ia emits radio waves, Type II emits X-rays",
-      "Type Ia occurs in spiral galaxies, Type II in elliptical galaxies"
-    ],
-    "answer": "Type Ia originates from a white dwarf, Type II from a massive star",
-    "subtopic": "Stellar Evolution",
+    "question": "What is the typical mass range of stellar-mass black holes?",
+    "options": ["3–20 solar masses", "10⁶–10⁹ solar masses", "50–500 solar masses", "Less than 1 solar mass"],
+    "answer": "3–20 solar masses",
+    "subtopic": "Black Hole Properties",
     "difficulty": "Medium",
-    "hint": "One involves a white dwarf in a binary system.",
-    "explanation": "Type Ia supernovae occur when a white dwarf accretes mass from a companion star and exceeds the Chandrasekhar limit. Type II occur from the core collapse of massive stars."
+    "hint": "Formed from massive stars.",
+    "explanation": "Stellar-mass black holes typically have masses between 3 and 20 times the Sun."
+  },
+  {
+    "event": "Astronomy",
+    "question": "What phenomenon occurs when a star orbits a black hole closely and gets stretched?",
+    "options": ["Tidal disruption event", "Supernova", "Nova", "Accretion flare"],
+    "answer": "Tidal disruption event",
+    "subtopic": "Black Hole Effects",
+    "difficulty": "Medium",
+    "hint": "The star is pulled apart by gravity.",
+    "explanation": "A tidal disruption event happens when the gravitational gradient of a black hole tears a star apart."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which object is denser: a neutron star or a stellar-mass black hole?",
+    "options": ["Black hole", "Neutron star", "Both equal", "Cannot compare"],
+    "answer": "Black hole",
+    "subtopic": "Compact Objects",
+    "difficulty": "Medium",
+    "hint": "Density at singularity is infinite.",
+    "explanation": "Black holes contain a singularity with theoretically infinite density, denser than neutron stars."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which compact object is formed after a supernova of a 8–20 solar mass star?",
+    "options": ["Neutron star", "Black hole", "White dwarf", "Brown dwarf"],
+    "answer": "Neutron star",
+    "subtopic": "Compact Objects",
+    "difficulty": "Easy",
+    "hint": "Not massive enough to form a black hole.",
+    "explanation": "Stars in this mass range collapse into neutron stars after a supernova."
+  },
+  {
+    "event": "Astronomy",
+    "question": "What is the fastest known rotating neutron star called?",
+    "options": ["Pulsar", "Magnetar", "Quasar", "Blazar"],
+    "answer": "Pulsar",
+    "subtopic": "Compact Objects",
+    "difficulty": "Medium",
+    "hint": "It emits regular radio pulses.",
+    "explanation": "Pulsars are rapidly rotating neutron stars emitting beams of radiation that appear as pulses."
+  },
+  {
+    "event": "Astronomy",
+    "question": "What is the Schwarzschild radius?",
+    "options": ["Radius of event horizon", "Core radius", "Accretion disk radius", "Photon orbit radius"],
+    "answer": "Radius of event horizon",
+    "subtopic": "Black Hole Basics",
+    "difficulty": "Medium",
+    "hint": "Depends on mass of black hole.",
+    "explanation": "The Schwarzschild radius is the radius of the event horizon, proportional to the black hole's mass."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which black hole type has masses between stellar-mass and supermassive?",
+    "options": ["Intermediate-mass black hole", "Primordial black hole", "Mini black hole", "Quasar"],
+    "answer": "Intermediate-mass black hole",
+    "subtopic": "Black Hole Classification",
+    "difficulty": "Medium",
+    "hint": "Ranging 100–10⁵ solar masses.",
+    "explanation": "Intermediate-mass black holes have masses between 100–100,000 solar masses, bridging stellar and supermassive types."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which effect causes gravitational redshift near black holes?",
+    "options": ["Einstein's general relativity", "Doppler effect", "Hubble expansion", "Lorentz contraction"],
+    "answer": "Einstein's general relativity",
+    "subtopic": "Black Hole Physics",
+    "difficulty": "Hard",
+    "hint": "Time and space are warped by gravity.",
+    "explanation": "Strong gravity near black holes stretches light waves, causing gravitational redshift according to general relativity."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which phenomenon allows matter to escape from a neutron star but not a black hole?",
+    "options": ["Radiation pressure", "Magnetic reconnection", "Relativistic jets", "Hawking radiation"],
+    "answer": "Relativistic jets",
+    "subtopic": "Compact Object Effects",
+    "difficulty": "Medium",
+    "hint": "Jets are often seen in X-ray binaries.",
+    "explanation": "Neutron stars and black holes can produce jets, but matter can escape neutron stars via magnetic processes; black holes have a true event horizon."
+  },
+  {
+    "event": "Astronomy",
+    "question": "What is a magnetar?",
+    "options": ["Neutron star with extremely strong magnetic field", "White dwarf", "Black hole with charge", "Pulsar with slow rotation"],
+    "answer": "Neutron star with extremely strong magnetic field",
+    "subtopic": "Compact Objects",
+    "difficulty": "Medium",
+    "hint": "Strongest magnetic fields in the universe.",
+    "explanation": "Magnetars are neutron stars with magnetic fields trillions of times stronger than Earth’s."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which process can create black holes in the early universe?",
+    "options": ["Primordial black hole formation", "Supernova", "Stellar collapse", "Accretion"],
+    "answer": "Primordial black hole formation",
+    "subtopic": "Black Hole Formation",
+    "difficulty": "Hard",
+    "hint": "Formed from density fluctuations, not stars.",
+    "explanation": "Primordial black holes may have formed from high-density regions in the early universe before stars existed."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which astronomical observation confirmed the existence of stellar-mass black holes?",
+    "options": ["X-ray binaries", "Gravitational waves", "Pulsar timing", "Microlensing"],
+    "answer": "X-ray binaries",
+    "subtopic": "Observational Evidence",
+    "difficulty": "Medium",
+    "hint": "Look for a normal star orbiting an invisible massive object.",
+    "explanation": "X-ray binaries, where a normal star orbits an unseen compact object emitting X-rays, provide evidence for stellar-mass black holes."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which is more massive: a typical neutron star or a typical stellar-mass black hole?",
+    "options": ["Stellar-mass black hole", "Neutron star", "Both equal", "Varies randomly"],
+    "answer": "Stellar-mass black hole",
+    "subtopic": "Compact Object Properties",
+    "difficulty": "Easy",
+    "hint": "Black holes exceed the Tolman–Oppenheimer–Volkoff limit.",
+    "explanation": "Neutron stars have a maximum mass (~2–3 M☉); objects beyond this limit collapse into black holes."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which black hole property cannot be directly measured?",
+    "options": ["Singularity density", "Mass", "Spin", "Charge"],
+    "answer": "Singularity density",
+    "subtopic": "Black Hole Physics",
+    "difficulty": "Hard",
+    "hint": "The singularity is hidden behind the event horizon.",
+    "explanation": "While mass, spin, and charge can be inferred, the singularity itself cannot be directly observed."
+  },
+  {
+    "event": "Astronomy",
+    "question": "What type of radiation is emitted by matter in the accretion disk of a black hole?",
+    "options": ["X-rays", "Radio waves", "Infrared", "Microwaves"],
+    "answer": "X-rays",
+    "subtopic": "Black Hole Effects",
+    "difficulty": "Medium",
+    "hint": "High-energy radiation from hot matter.",
+    "explanation": "Matter falling into a black hole heats up to millions of degrees, emitting X-rays."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which astronomical tool allowed the first image of a black hole?",
+    "options": ["Event Horizon Telescope", "Hubble Space Telescope", "Chandra X-ray Observatory", "Kepler Telescope"],
+    "answer": "Event Horizon Telescope",
+    "subtopic": "Observational Techniques",
+    "difficulty": "Hard",
+    "hint": "It combines radio telescopes worldwide.",
+    "explanation": "The Event Horizon Telescope used very-long-baseline interferometry to capture the first image of a black hole in M87."
+  },
+  {
+    "event": "Astronomy",
+    "question": "What is the typical size of a stellar-mass black hole's event horizon?",
+    "options": ["10–60 km", "100 km", "1,000 km", "10⁶ km"],
+    "answer": "10–60 km",
+    "subtopic": "Black Hole Properties",
+    "difficulty": "Medium",
+    "hint": "Depends on mass of a few solar masses.",
+    "explanation": "Stellar-mass black holes have small event horizons, roughly 10–60 km in radius."
+  },
+  {
+    "event": "Astronomy",
+    "question": "Which black hole property is measurable via gravitational wave observations?",
+    "options": ["Mass and spin", "Singularity density", "Event horizon radius", "Magnetic field"],
+    "answer": "Mass and spin",
+    "subtopic": "Observational Evidence",
+    "difficulty": "Medium",
+    "hint": "LIGO detected merging black holes.",
+    "explanation": "Gravitational waves from black hole mergers reveal their masses and spins."
   }
 ]
