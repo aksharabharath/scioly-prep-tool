@@ -188,9 +188,7 @@
     "difficulty": "Hard",
     "hint": "Consider how the progenitor and mechanism differ.",
     "explanation": "Type Ia supernovae come from white dwarfs in binaries, while Type II are massive star core collapses; they differ in brightness and remnants."
-  }
-]
-[
+  },
   {
     "event": "Astronomy",
     "topic": "Stellar Properties & Classification",
@@ -380,9 +378,7 @@
     "difficulty": "Medium",
     "hint": "These stars burn fuel quickly due to high mass.",
     "explanation": "O-type stars are extremely hot, massive, and have lifespans of only a few million years."
-  }
-]
-[
+  },
   {
     "event": "Astronomy",
     "topic": "Exoplanets & Planetary Science",
@@ -562,9 +558,7 @@
     "difficulty": "Medium",
     "hint": "Compare mass and radius.",
     "explanation": "Density helps distinguish rocky, gaseous, or icy planets based on their mass and radius."
-  }
-]
-[
+  },
   {
     "event": "Astronomy",
     "topic": "Stellar Evolution & Lifecycles",
@@ -754,9 +748,7 @@
     "difficulty": "Hard",
     "hint": "Fusion of this element consumes energy rather than producing it.",
     "explanation": "Iron cannot release energy via fusion, leading to core collapse and supernova."
-  }
-]
-[
+  },
   {
     "event": "Astronomy",
     "topic": "Stars & Classification",
@@ -946,9 +938,7 @@
     "difficulty": "Easy",
     "hint": "Spectral classification is intrinsic.",
     "explanation": "Spectral classification depends on temperature, luminosity, and composition, not distance."
-  }
-]
-[
+  },
   {
     "event": "Astronomy",
     "topic": "Exoplanets & Planetary Systems",
@@ -1148,9 +1138,7 @@
     "difficulty": "Medium",
     "hint": "Different from early expectations.",
     "explanation": "Exoplanet discoveries show planetary systems can have a wide range of planet types and orbital configurations."
-  }
-]
-[
+  },
   {
     "event": "Astronomy",
     "topic": "Stellar Evolution",
@@ -1340,9 +1328,7 @@
     "difficulty": "Medium",
     "hint": "Prevents collapse during life.",
     "explanation": "The outward pressure from nuclear fusion balances gravity, keeping the star stable on the main sequence."
-  }
-]
-[
+  },
   {
     "event": "Astronomy",
     "topic": "H-R Diagram & Stellar Classification",
@@ -1532,9 +1518,7 @@
     "difficulty": "Medium",
     "hint": "Outer layers expand and brighten.",
     "explanation": "As a star expands into a red giant, its luminosity increases even though surface temperature decreases."
-  }
-]
-[
+  },
   {
     "event": "Astronomy",
     "question": "Which method detects exoplanets by observing periodic dimming of a star's light?",
@@ -1744,9 +1728,7 @@
     "difficulty": "Medium",
     "hint": "Larger than Earth, possibly habitable.",
     "explanation": "Kepler-22b is an exoplanet larger than Earth, located in its star’s habitable zone, making it a Super-Earth candidate."
-  }
-]
-[
+  },
   {
     "event": "Astronomy",
     "question": "What is the defining feature of a black hole?",
