@@ -118,3 +118,49 @@ if st.button("Reset Progress"):
 st.write("### Your Scores")
 for e, score in st.session_state.scores.items():
     st.write(f"{e}: {score} correct answers")
+
+# ------------------------------
+# Timed Drill / Study Mode
+# ------------------------------
+if mode == "Timed Drill":
+    time_limit = st.number_input("Enter total time limit in seconds:", min_value=30, value=120)
+    start_drill = st.button("Start Timed Drill")
+    
+    if start_drill:
+        # Save start time in session state
+        st.session_state.start_time = time.time()
+        st.session_state.time_limit = time_limit
+        st.session_state.current_q_index = 0
+
+    if 'start_time' in st.session_state:
+        elapsed = time.time() - st.session_state.start_time
+        remaining_time = st.session_state.time_limit - elapsed
+
+        if remaining_time <= 0:
+            st.warning("⏰ Time's up!")
+        else:
+            st.info(f"Time remaining: {int(remaining_time)} seconds")
+
+            # Show current question
+            if st.session_state.current_q_index < len(filtered_questions):
+                q = filtered_questions[st.session_state.current_q_index]
+                st.write(f"**Q{st.session_state.current_q_index + 1}: {q['question']}**")
+                choice = st.radio("Select answer:", q["options"], key=f"drill_{st.session_state.current_q_index}")
+                show_hint = st.checkbox("Show Hint", key=f"drill_hint_{st.session_state.current_q_index}")
+                if show_hint:
+                    st.info(q.get("hint", "No hint available."))
+
+                if st.button("Submit Answer", key=f"submit_drill_{st.session_state.current_q_index}"):
+                    if choice == q["answer"]:
+                        st.success("✅ Correct!")
+                        st.session_state.scores[event] = st.session_state.scores.get(event, 0) + 1
+                    else:
+                        st.error(f"❌ Incorrect! Correct answer: {q['answer']}")
+                    entry = f"Q{st.session_state.current_q_index + 1}: {q['question']} - Answer: {q['answer']}"
+                    if entry not in st.session_state.selected_questions:
+                        st.session_state.selected_questions.append(entry)
+
+                    # Move to next question
+                    st.session_state.current_q_index += 1
+            else:
+                st.success("🎉 You've answered all questions!")
