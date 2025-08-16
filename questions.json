@@ -149,8 +149,6 @@
     "hint": "Use M = M_sun - 2.5 log₁₀(L/L_sun).",
     "explanation": "M = 4.8 - 2.5 log₁₀(79) ≈ -3.6."
   },
-
-  // -- additional 40 questions generated below --
   {
     "event": "Astronomy",
     "question": "Which of the following best describes a 'hot Jupiter'?",
@@ -211,8 +209,6 @@
     "hint": "Three main galaxy types exist.",
     "explanation": "Linear is not a classification of galaxies."
   },
-
-[
   {
     "event": "Astronomy",
     "question": "The presence of an atmosphere on a planet's surface leads to an increase in its temperature due to which of the following phenomena?",
@@ -363,7 +359,6 @@
     "hint": "The ratio of the planet's area to the star's area is directly related to the observed change in brightness.",
     "explanation": "The transit method for exoplanet detection involves measuring the slight dip in a star's brightness as a planet passes in front of it. The amount of light blocked (the transit depth) is proportional to the square of the ratio of the planet's radius to the star's radius. By knowing the star's radius, one can estimate the radius of the planet."
   },
-
   {
     "event": "Astronomy",
     "question": "Which type of galaxy has no defined shape and is often irregular in appearance?",
@@ -379,7 +374,6 @@
     "hint": "It does not have a spiral or elliptical shape.",
     "explanation": "Irregular galaxies do not have a defined shape and often appear chaotic in structure."
   },
-
   {
     "event": "Astronomy",
     "question": "Which layer of the Sun is responsible for its visible light?",
@@ -395,7 +389,6 @@
     "hint": "This is the Sun's 'surface' we can see.",
     "explanation": "The photosphere is the layer of the Sun from which most of its visible light is emitted."
   },
-
   {
     "event": "Astronomy",
     "question": "Which type of variable star is used as a 'standard candle' for measuring cosmic distances?",
@@ -410,10 +403,7 @@
     "difficulty": "Medium",
     "hint": "It has a well-defined period-luminosity relationship.",
     "explanation": "Cepheid variable stars have a known relationship between their pulsation period and intrinsic luminosity, making them useful for measuring distances."
-  }
-]
-
-[
+  },
   {
     "event": "Astronomy",
     "question": "What is the primary composition of Jupiter's atmosphere?",
@@ -715,5 +705,3 @@
     "explanation": "Type Ia supernovae occur when a white dwarf accretes mass from a companion star and exceeds the Chandrasekhar limit. Type II occur from the core collapse of massive stars."
   }
 ]
-]
-
