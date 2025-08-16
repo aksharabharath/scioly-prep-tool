@@ -2,35 +2,16 @@
 import streamlit as st
 import random
 import time
+import json
 
 # ------------------------------
-# Sample Question Bank
+# Load Questions from JSON
 # ------------------------------
-questions = {
-    "Astronomy": [
-        {"question": "Which is the brightest star in the night sky?",
-         "options": ["Sirius", "Betelgeuse", "Rigel", "Vega"],
-         "answer": "Sirius", "hint": "It is part of Canis Major.", "topic": "Stars", "difficulty": "Easy"},
-        {"question": "The H-R diagram plots which two properties?",
-         "options": ["Mass vs Temperature", "Luminosity vs Temperature", "Distance vs Brightness", "Radius vs Mass"],
-         "answer": "Luminosity vs Temperature", "hint": "It's used to classify stars.", "topic": "Star Classification", "difficulty": "Medium"}
-    ],
-    "Forensics": [
-        {"question": "Which technique separates DNA fragments?",
-         "options": ["Chromatography", "Electrophoresis", "Spectroscopy", "Centrifugation"],
-         "answer": "Electrophoresis", "hint": "It uses an electric field.", "topic": "DNA Analysis", "difficulty": "Easy"}
-    ],
-    "Circuit Lab": [
-        {"question": "Ohm's Law formula is?",
-         "options": ["V=IR", "P=VI", "V=I^2R", "E=mc^2"],
-         "answer": "V=IR", "hint": "Voltage equals current times resistance.", "topic": "Basics", "difficulty": "Easy"}
-    ],
-    "Remote Sensing": [
-        {"question": "Which part of EM spectrum is used for thermal imaging?",
-         "options": ["Infrared", "Visible", "UV", "Microwave"],
-         "answer": "Infrared", "hint": "Humans emit it.", "topic": "EM Spectrum", "difficulty": "Easy"}
-    ]
-}
+with open("questions.json", "r") as f:
+    all_questions = json.load(f)
+
+# all_questions should have the structure:
+# { "Astronomy": [ {...}, {...} ], "Forensics": [ {...} ], ... }
 
 # ------------------------------
 # Streamlit App
@@ -44,19 +25,19 @@ if 'scores' not in st.session_state:
     st.session_state.scores = {}
 
 # Sidebar options
-event = st.selectbox("Select Event:", list(questions.keys()))
+event = st.selectbox("Select Event:", list(all_questions.keys()))
 mode = st.radio("Select Mode:", ["Study Mode", "Timed Drill"])
 
 # Topic Filtering
-topics = list(set(q['topic'] for q in questions[event]))
+topics = list(set(q['topic'] for q in all_questions[event]))
 selected_topics = st.multiselect("Filter by Topic:", topics, default=topics)
 
 # Difficulty Filtering
-difficulties = list(set(q['difficulty'] for q in questions[event]))
+difficulties = list(set(q['difficulty'] for q in all_questions[event]))
 selected_difficulty = st.multiselect("Select Difficulty:", difficulties, default=difficulties)
 
 # Filter questions based on selection
-filtered_questions = [q for q in questions[event] if q['topic'] in selected_topics and q['difficulty'] in selected_difficulty]
+filtered_questions = [q for q in all_questions[event] if q['topic'] in selected_topics and q['difficulty'] in selected_difficulty]
 random.shuffle(filtered_questions)
 
 # Timed Drill Setup
