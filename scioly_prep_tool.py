@@ -8,7 +8,13 @@ import json
 # Load Question Bank from JSON
 # ------------------------------
 with open("questions.json", "r", encoding="utf-8") as f:
-    all_questions = json.load(f)
+    raw_questions = json.load(f)
+
+# Convert list of questions to dict grouped by event
+all_questions = {}
+for q in raw_questions:
+    event = q.pop("event")  # Remove 'event' key
+    all_questions.setdefault(event, []).append(q)
 
 # ------------------------------
 # Streamlit App
@@ -21,12 +27,12 @@ if 'selected_questions' not in st.session_state:
 if 'scores' not in st.session_state:
     st.session_state.scores = {}
 
-# Sidebar: Event selection and mode
+# Sidebar options
 event = st.selectbox("Select Event:", list(all_questions.keys()))
 mode = st.radio("Select Mode:", ["Study Mode", "Timed Drill"])
 
 # Topic Filtering
-topics = list(set(q['topic'] for q in all_questions[event]))
+topics = list(set(q['subtopic'] for q in all_questions[event]))
 selected_topics = st.multiselect("Filter by Topic:", topics, default=topics)
 
 # Difficulty Filtering
@@ -36,17 +42,14 @@ selected_difficulty = st.multiselect("Select Difficulty:", difficulties, default
 # Filter questions based on selection
 filtered_questions = [
     q for q in all_questions[event]
-    if q['topic'] in selected_topics and q['difficulty'] in selected_difficulty
+    if q['subtopic'] in selected_topics and q['difficulty'] in selected_difficulty
 ]
 random.shuffle(filtered_questions)
 
-# ------------------------------
-# Timed Drill Mode
-# ------------------------------
+# Timed Drill Setup
 if mode == "Timed Drill":
     time_limit = st.number_input("Enter time limit in seconds:", min_value=30, value=60)
     start_drill = st.button("Start Timed Drill")
-
     if start_drill:
         start_time = time.time()
         for i, q in enumerate(filtered_questions, 1):
@@ -54,47 +57,39 @@ if mode == "Timed Drill":
             if elapsed > time_limit:
                 st.warning("Time's up!")
                 break
-
             st.write(f"**Q{i}: {q['question']}**")
             choice = st.radio("Select answer:", q["options"], key=f"{event}_{i}")
-            if st.checkbox("Show Hint", key=f"hint_{i}"):
+            show_hint = st.checkbox("Show Hint", key=f"hint_{i}")
+            if show_hint:
                 st.info(q["hint"])
-
             if st.button(f"Submit Q{i}", key=f"submit_{event}_{i}"):
                 if choice == q["answer"]:
                     st.success("Correct!")
                     st.session_state.scores[event] = st.session_state.scores.get(event, 0) + 1
                 else:
                     st.error(f"Incorrect! Correct answer: {q['answer']}")
-
                 entry = f"Q{i}: {q['question']} - Answer: {q['answer']}"
                 if entry not in st.session_state.selected_questions:
                     st.session_state.selected_questions.append(entry)
-
-# ------------------------------
-# Study Mode
-# ------------------------------
 else:
+    # Study Mode
     for i, q in enumerate(filtered_questions, 1):
         st.write(f"**Q{i}: {q['question']}**")
         choice = st.radio("Select answer:", q["options"], key=f"{event}_{i}")
-        if st.checkbox("Show Hint", key=f"hint_{i}"):
+        show_hint = st.checkbox("Show Hint", key=f"hint_{i}")
+        if show_hint:
             st.info(q["hint"])
-
         if st.button(f"Submit Q{i}", key=f"submit_{event}_{i}"):
             if choice == q["answer"]:
                 st.success("Correct!")
                 st.session_state.scores[event] = st.session_state.scores.get(event, 0) + 1
             else:
                 st.error(f"Incorrect! Correct answer: {q['answer']}")
-
             entry = f"Q{i}: {q['question']} - Answer: {q['answer']}"
             if entry not in st.session_state.selected_questions:
                 st.session_state.selected_questions.append(entry)
 
-# ------------------------------
-# Cheat Sheet Generator
-# ------------------------------
+# Cheat Sheet
 if st.button("Generate Cheat Sheet"):
     if st.session_state.selected_questions:
         cheat_text = "\n".join(st.session_state.selected_questions)
@@ -104,17 +99,13 @@ if st.button("Generate Cheat Sheet"):
     else:
         st.warning("No questions answered yet!")
 
-# ------------------------------
 # Reset Progress
-# ------------------------------
 if st.button("Reset Progress"):
     st.session_state.selected_questions = []
     st.session_state.scores[event] = 0
     st.success("Progress reset!")
 
-# ------------------------------
 # Display Scores / Progress Analytics
-# ------------------------------
 st.write("### Your Scores")
 for e, score in st.session_state.scores.items():
     st.write(f"{e}: {score} correct answers")
