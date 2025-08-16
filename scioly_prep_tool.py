@@ -5,16 +5,18 @@ import time
 import json
 
 # ------------------------------
-# Load Question Bank from JSON
+# Load Questions from JSON
 # ------------------------------
 with open("questions.json", "r", encoding="utf-8") as f:
-    raw_questions = json.load(f)
+    all_questions = json.load(f)
 
-# Convert list of questions to dict grouped by event
-all_questions = {}
-for q in raw_questions:
-    event = q.pop("event")  # Remove 'event' key
-    all_questions.setdefault(event, []).append(q)
+# Organize questions by event/topic
+questions = {}
+for q in all_questions:
+    event = q["event"]
+    if event not in questions:
+        questions[event] = []
+    questions[event].append(q)
 
 # ------------------------------
 # Streamlit App
@@ -27,26 +29,27 @@ if 'selected_questions' not in st.session_state:
 if 'scores' not in st.session_state:
     st.session_state.scores = {}
 
-# Sidebar options
-event = st.selectbox("Select Event:", list(all_questions.keys()))
+# Sidebar: Event selection
+event = st.selectbox("Select Event / Topic:", list(questions.keys()))
+
+# Mode selection
 mode = st.radio("Select Mode:", ["Study Mode", "Timed Drill"])
 
-# Topic Filtering
-topics = list(set(q['subtopic'] for q in all_questions[event]))
-selected_topics = st.multiselect("Filter by Topic:", topics, default=topics)
+# Topic Filtering (subtopic within the event)
+topics = list(set(q['subtopic'] for q in questions[event]))
+selected_topics = st.multiselect("Filter by Subtopic:", topics, default=topics)
 
 # Difficulty Filtering
-difficulties = list(set(q['difficulty'] for q in all_questions[event]))
+difficulties = list(set(q['difficulty'] for q in questions[event]))
 selected_difficulty = st.multiselect("Select Difficulty:", difficulties, default=difficulties)
 
-# Filter questions based on selection
-filtered_questions = [
-    q for q in all_questions[event]
-    if q['subtopic'] in selected_topics and q['difficulty'] in selected_difficulty
-]
+# Filter questions based on selections
+filtered_questions = [q for q in questions[event] if q['subtopic'] in selected_topics and q['difficulty'] in selected_difficulty]
 random.shuffle(filtered_questions)
 
-# Timed Drill Setup
+# ------------------------------
+# Timed Drill Mode
+# ------------------------------
 if mode == "Timed Drill":
     time_limit = st.number_input("Enter time limit in seconds:", min_value=30, value=60)
     start_drill = st.button("Start Timed Drill")
@@ -71,8 +74,11 @@ if mode == "Timed Drill":
                 entry = f"Q{i}: {q['question']} - Answer: {q['answer']}"
                 if entry not in st.session_state.selected_questions:
                     st.session_state.selected_questions.append(entry)
+
+# ------------------------------
+# Study Mode
+# ------------------------------
 else:
-    # Study Mode
     for i, q in enumerate(filtered_questions, 1):
         st.write(f"**Q{i}: {q['question']}**")
         choice = st.radio("Select answer:", q["options"], key=f"{event}_{i}")
@@ -89,7 +95,9 @@ else:
             if entry not in st.session_state.selected_questions:
                 st.session_state.selected_questions.append(entry)
 
+# ------------------------------
 # Cheat Sheet
+# ------------------------------
 if st.button("Generate Cheat Sheet"):
     if st.session_state.selected_questions:
         cheat_text = "\n".join(st.session_state.selected_questions)
@@ -99,13 +107,17 @@ if st.button("Generate Cheat Sheet"):
     else:
         st.warning("No questions answered yet!")
 
+# ------------------------------
 # Reset Progress
+# ------------------------------
 if st.button("Reset Progress"):
     st.session_state.selected_questions = []
     st.session_state.scores[event] = 0
     st.success("Progress reset!")
 
-# Display Scores / Progress Analytics
+# ------------------------------
+# Display Scores
+# ------------------------------
 st.write("### Your Scores")
 for e, score in st.session_state.scores.items():
     st.write(f"{e}: {score} correct answers")
