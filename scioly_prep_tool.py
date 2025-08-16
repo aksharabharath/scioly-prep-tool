@@ -1,27 +1,27 @@
 # scioly_prep_tool.py
 import streamlit as st
+import json
 import random
 import time
-import json
+from collections import defaultdict
 
 # ------------------------------
-# Load Questions from JSON
+# Load Questions JSON
 # ------------------------------
 try:
     with open("questions.json", "r", encoding="utf-8") as f:
         all_questions = json.load(f)
 except FileNotFoundError:
-    st.error("JSON file not found. Make sure 'questions.json' is in the same folder as this script.")
+    st.error("questions.json file not found. Make sure it's in the same folder as this script.")
     st.stop()
 except json.JSONDecodeError as e:
     st.error(f"Error decoding JSON: {e}")
     st.stop()
 
 # Organize questions by event
-questions_by_event = {}
+questions_by_event = defaultdict(list)
 for q in all_questions:
-    event = q["event"]
-    questions_by_event.setdefault(event, []).append(q)
+    questions_by_event[q['event']].append(q)
 
 # ------------------------------
 # Streamlit App
