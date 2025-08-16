@@ -1,22 +1,14 @@
 # scioly_prep_tool.py
 import streamlit as st
+import json
 import random
 import time
-import json
 
 # ------------------------------
 # Load Questions from JSON
 # ------------------------------
-with open("questions.json", "r", encoding="utf-8") as f:
+with open("all_questions.json", "r", encoding="utf-8") as f:
     all_questions = json.load(f)
-
-# Organize questions by event/topic
-questions = {}
-for q in all_questions:
-    event = q["event"]
-    if event not in questions:
-        questions[event] = []
-    questions[event].append(q)
 
 # ------------------------------
 # Streamlit App
@@ -29,30 +21,39 @@ if 'selected_questions' not in st.session_state:
 if 'scores' not in st.session_state:
     st.session_state.scores = {}
 
-# Sidebar: Event selection
-event = st.selectbox("Select Event / Topic:", list(questions.keys()))
+# ------------------------------
+# Sidebar / Filters
+# ------------------------------
+events = list(set(q['event'] for q in all_questions))
+event = st.selectbox("Select Event:", events)
 
-# Mode selection
-mode = st.radio("Select Mode:", ["Study Mode", "Timed Drill"])
+# Filter questions for the selected event
+event_questions = [q for q in all_questions if q['event'] == event]
 
-# Topic Filtering (subtopic within the event)
-topics = list(set(q['subtopic'] for q in questions[event]))
-selected_topics = st.multiselect("Filter by Subtopic:", topics, default=topics)
+# Topics
+topics = list(set(q['topic'] for q in event_questions))
+selected_topics = st.multiselect("Filter by Topic:", topics, default=topics)
 
-# Difficulty Filtering
-difficulties = list(set(q['difficulty'] for q in questions[event]))
+# Difficulty
+difficulties = list(set(q['difficulty'] for q in event_questions))
 selected_difficulty = st.multiselect("Select Difficulty:", difficulties, default=difficulties)
 
-# Filter questions based on selections
-filtered_questions = [q for q in questions[event] if q['subtopic'] in selected_topics and q['difficulty'] in selected_difficulty]
+# Filter questions based on selected topics and difficulty
+filtered_questions = [q for q in event_questions if q['topic'] in selected_topics and q['difficulty'] in selected_difficulty]
 random.shuffle(filtered_questions)
 
 # ------------------------------
-# Timed Drill Mode
+# Mode Selection
+# ------------------------------
+mode = st.radio("Select Mode:", ["Study Mode", "Timed Drill"])
+
+# ------------------------------
+# Timed Drill
 # ------------------------------
 if mode == "Timed Drill":
     time_limit = st.number_input("Enter time limit in seconds:", min_value=30, value=60)
     start_drill = st.button("Start Timed Drill")
+
     if start_drill:
         start_time = time.time()
         for i, q in enumerate(filtered_questions, 1):
@@ -60,6 +61,7 @@ if mode == "Timed Drill":
             if elapsed > time_limit:
                 st.warning("Time's up!")
                 break
+
             st.write(f"**Q{i}: {q['question']}**")
             choice = st.radio("Select answer:", q["options"], key=f"{event}_{i}")
             show_hint = st.checkbox("Show Hint", key=f"hint_{i}")
