@@ -3,25 +3,25 @@ import streamlit as st
 import json
 import random
 import time
-from collections import defaultdict
 
 # ------------------------------
-# Load Questions JSON
+# Load JSON Questions
 # ------------------------------
 try:
     with open("questions.json", "r", encoding="utf-8") as f:
         all_questions = json.load(f)
 except FileNotFoundError:
-    st.error("questions.json file not found. Make sure it's in the same folder as this script.")
+    st.error("questions.json file not found. Please make sure it's in the same directory as this script.")
     st.stop()
 except json.JSONDecodeError as e:
     st.error(f"Error decoding JSON: {e}")
     st.stop()
 
 # Organize questions by event
-questions_by_event = defaultdict(list)
+questions_by_event = {}
 for q in all_questions:
-    questions_by_event[q['event']].append(q)
+    event = q.get("event", "Unknown")
+    questions_by_event.setdefault(event, []).append(q)
 
 # ------------------------------
 # Streamlit App
@@ -34,23 +34,32 @@ if 'selected_questions' not in st.session_state:
 if 'scores' not in st.session_state:
     st.session_state.scores = {}
 
-# Sidebar options
+# Sidebar: Select Event and Mode
 event = st.selectbox("Select Event:", list(questions_by_event.keys()))
 mode = st.radio("Select Mode:", ["Study Mode", "Timed Drill"])
 
-# Topic Filtering
-topics = list(set(q['topic'] for q in questions_by_event[event]))
+# ------------------------------
+# Topic Filtering with safety check
+# ------------------------------
+event_questions = questions_by_event.get(event, [])
+# Only include questions that have a 'topic' key
+topics = list(set(q.get('topic', 'Unknown') for q in event_questions))
 selected_topics = st.multiselect("Filter by Topic:", topics, default=topics)
 
 # Difficulty Filtering
-difficulties = list(set(q['difficulty'] for q in questions_by_event[event]))
+difficulties = list(set(q.get('difficulty', 'Unknown') for q in event_questions))
 selected_difficulty = st.multiselect("Select Difficulty:", difficulties, default=difficulties)
 
 # Filter questions based on selection
-filtered_questions = [q for q in questions_by_event[event] if q['topic'] in selected_topics and q['difficulty'] in selected_difficulty]
+filtered_questions = [
+    q for q in event_questions
+    if q.get('topic', 'Unknown') in selected_topics and q.get('difficulty', 'Unknown') in selected_difficulty
+]
 random.shuffle(filtered_questions)
 
+# ------------------------------
 # Timed Drill Setup
+# ------------------------------
 if mode == "Timed Drill":
     time_limit = st.number_input("Enter time limit in seconds:", min_value=30, value=60)
     start_drill = st.button("Start Timed Drill")
@@ -65,35 +74,40 @@ if mode == "Timed Drill":
             choice = st.radio("Select answer:", q["options"], key=f"{event}_{i}")
             show_hint = st.checkbox("Show Hint", key=f"hint_{i}")
             if show_hint:
-                st.info(q["hint"])
+                st.info(q.get("hint", "No hint available."))
             if st.button(f"Submit Q{i}", key=f"submit_{event}_{i}"):
-                if choice == q["answer"]:
+                if choice == q.get("answer"):
                     st.success("Correct!")
                     st.session_state.scores[event] = st.session_state.scores.get(event, 0) + 1
                 else:
-                    st.error(f"Incorrect! Correct answer: {q['answer']}")
-                entry = f"Q{i}: {q['question']} - Answer: {q['answer']}"
+                    st.error(f"Incorrect! Correct answer: {q.get('answer')}")
+                entry = f"Q{i}: {q['question']} - Answer: {q.get('answer')}"
                 if entry not in st.session_state.selected_questions:
                     st.session_state.selected_questions.append(entry)
+
+# ------------------------------
+# Study Mode
+# ------------------------------
 else:
-    # Study Mode
     for i, q in enumerate(filtered_questions, 1):
         st.write(f"**Q{i}: {q['question']}**")
         choice = st.radio("Select answer:", q["options"], key=f"{event}_{i}")
         show_hint = st.checkbox("Show Hint", key=f"hint_{i}")
         if show_hint:
-            st.info(q["hint"])
+            st.info(q.get("hint", "No hint available."))
         if st.button(f"Submit Q{i}", key=f"submit_{event}_{i}"):
-            if choice == q["answer"]:
+            if choice == q.get("answer"):
                 st.success("Correct!")
                 st.session_state.scores[event] = st.session_state.scores.get(event, 0) + 1
             else:
-                st.error(f"Incorrect! Correct answer: {q['answer']}")
-            entry = f"Q{i}: {q['question']} - Answer: {q['answer']}"
+                st.error(f"Incorrect! Correct answer: {q.get('answer')}")
+            entry = f"Q{i}: {q['question']} - Answer: {q.get('answer')}"
             if entry not in st.session_state.selected_questions:
                 st.session_state.selected_questions.append(entry)
 
+# ------------------------------
 # Cheat Sheet
+# ------------------------------
 if st.button("Generate Cheat Sheet"):
     if st.session_state.selected_questions:
         cheat_text = "\n".join(st.session_state.selected_questions)
@@ -103,13 +117,17 @@ if st.button("Generate Cheat Sheet"):
     else:
         st.warning("No questions answered yet!")
 
+# ------------------------------
 # Reset Progress
+# ------------------------------
 if st.button("Reset Progress"):
     st.session_state.selected_questions = []
     st.session_state.scores[event] = 0
     st.success("Progress reset!")
 
+# ------------------------------
 # Display Scores / Progress Analytics
+# ------------------------------
 st.write("### Your Scores")
 for e, score in st.session_state.scores.items():
     st.write(f"{e}: {score} correct answers")
